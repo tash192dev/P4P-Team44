@@ -1,0 +1,82 @@
+IP Upgrade report for top
+Tue Aug 19 17:34:51 2025
+Quartus Prime Version 24.1.0 Build 115 03/21/2024 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Failed Upgrade IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++---------------------------------------------------------------------------+
+; IP Upgrade Summary                                                        ;
++------------------------------+--------------------------------------------+
+; IP Components Upgrade Status ; Failed - Tue Aug 19 17:34:50 2025          ;
+; Quartus Prime Version        ; 24.1.0 Build 115 03/21/2024 SC Pro Edition ;
+; Revision Name                ; top                                        ;
+; Top-level Entity Name        ; top                                        ;
+; Family                       ; Arria 10                                   ;
++------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Failed Upgrade IP Components                                                                                                                                                                                                                                                                                               ;
++--------------------+----------------+---------+---------------------------------------------------------------------+---------------------------------------------------------------------+-----------------+--------------------------------------------------------------------------------------------------------------+
+; Entity Name        ; Component Name ; Version ; Original Source File                                                ; Generation File Path                                                ; New Source File ; Message                                                                                                      ;
++--------------------+----------------+---------+---------------------------------------------------------------------+---------------------------------------------------------------------+-----------------+--------------------------------------------------------------------------------------------------------------+
+; NiosVCustom_nvmm_0 ; nvmm           ; 1.0     ; ../../../UOA_Team_44_P4P/NiosV/ip/NiosVCustom/NiosVCustom_nvmm_0.ip ; ../../../UOA_Team_44_P4P/NiosV/ip/NiosVCustom/NiosVCustom_nvmm_0.ip ;                 ; Error upgrading Platform Designer file "../../../UOA_Team_44_P4P/NiosV/ip/NiosVCustom/NiosVCustom_nvmm_0.ip" ;
++--------------------+----------------+---------+---------------------------------------------------------------------+---------------------------------------------------------------------+-----------------+--------------------------------------------------------------------------------------------------------------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "/home/ubuntuaspiretank/p4p/UOA_Team_44_P4P/NiosV/ip/NiosVCustom/NiosVCustom_nvmm_0.ip" to "/home/ubuntuaspiretank/p4p/UOA_Team_44_P4P/NiosV/ip/NiosVCustom/NiosVCustom_nvmm_0.BAK.ip"
+Info (20325): ***************************************************************
+Info (20325): Quartus is a registered trademark of Intel Corporation in the
+Info (20325): US and other countries.  Portions of the Quartus Prime software
+Info (20325): code, and other portions of the code included in this download
+Info (20325): or on this DVD, are licensed to Intel Corporation and are the
+Info (20325): copyrighted property of third parties. For license details,
+Info (20325): refer to the End User License Agreement at
+Info (20325): http://fpgasoftware.intel.com/eula.
+Info (20325): ***************************************************************
+Info (20325): 2025.08.19.17:34:50 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info (20325): 2025.08.19.17:34:50 Info: Finished upgrading the ip cores
+Error (20327): 2025.08.19.17:34:50 Error: Error: System contains missing module of type nvmm. Add this component to the IP search path.
+Info (11904): Restoring file "/home/ubuntuaspiretank/p4p/UOA_Team_44_P4P/NiosV/ip/NiosVCustom/NiosVCustom_nvmm_0.BAK.ip" to "/home/ubuntuaspiretank/p4p/UOA_Team_44_P4P/NiosV/ip/NiosVCustom/NiosVCustom_nvmm_0.ip"
+Error (14923): Error upgrading Platform Designer file "../../../UOA_Team_44_P4P/NiosV/ip/NiosVCustom/NiosVCustom_nvmm_0.ip"
+Error (11133): IP component nvmm with file "../../../UOA_Team_44_P4P/NiosV/ip/NiosVCustom/NiosVCustom_nvmm_0.ip" upgrade failed
+Error (23031): Evaluation of Tcl script /home/ubuntuaspiretank/intelFPGA_pro/24.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 4 errors, 0 warnings
+    Error: Peak virtual memory: 1077 megabytes
+    Error: Processing ended: Tue Aug 19 17:34:51 2025
+    Error: Elapsed time: 00:00:13
+    Error: System process ID: 49132
+
+

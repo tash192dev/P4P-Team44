@@ -1,0 +1,28 @@
+{
+    "id": "822125",
+    "group_id": "776195",
+    "revision": 1,
+    "title": "Hello World on the Nios® V/g Processor Design Example",
+    "source": "Design Store",
+    "family": "Arria® 10 FPGA",
+    "quartus_version": "24.1",
+    "devkit": "Intel® Arria® 10 SX SoC Development Kit (Production) DK-SOC-10AS066S-D",
+    "description": "Nios® V/g Processor-based Hello World design example on the Arria® 10 FPGA",
+    "rich_description": "<p><img src=\"https://d1ikhsln0txzml.cloudfront.net/QA/images/850752/0EM2f0000006mlm.png\"></p><p><br></p><p>Please refer to the document for details about the design.</p><p><strong>Prepare the design template in the Quartus Prime software GUI</strong></p><p><strong>Note</strong>: After downloading the design example, you must prepare the design template. The file you downloaded is of the form of a &lt;project&gt;.par file which contains a compressed version of your design files (similar to a .qar file) and metadata describing the project. The combination of this information is what constitutes a &lt;project&gt;.par file. You can simply double click on the &lt;project&gt;.par file and Quartus will launch that project.</p>",
+    "documentations": [
+        {
+            "title": "Arria® 10 FPGA – \"Hello World\" on the Nios® V/g Processor Design Example",
+            "downloadUrl": ""
+        }
+    ],
+    "ip_cores": [
+        "Nios V/g Processor Intel FPGA IP",
+        "Configuration Clock Intel FPGA IP",
+        "In-System Sources & Probes Intel FPGA IP"
+    ],
+    "url": "https://www.intel.com/content/www/us/en/design-example/822125/a.html",
+    "downloadUrl": "UAM/Prod/Done/a06Hu00001fmFXVIA2/ddd4a86a-5f38-80f0-ade5-e51807896c05",
+    "eula_id": "",
+    "device_part": "10AS066N3F40E2SG",
+    "os": ""
+}
