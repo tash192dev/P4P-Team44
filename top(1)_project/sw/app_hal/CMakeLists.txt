@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.14)
 
-add_subdirectory(../new_bsp new_bsp)
+add_subdirectory(../big_bsp big_bsp)
 
-include(../new_bsp/toolchain.cmake)
+include(../big_bsp/toolchain.cmake)
 
 project(app_hal)
 
@@ -15,6 +15,7 @@ target_sources(app_hal.elf
 
 target_include_directories(app_hal.elf
     PRIVATE
+        custom_instructions
     PUBLIC
 )
 
