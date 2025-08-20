@@ -58,7 +58,7 @@ architecture rtl of nvmm is
 
 	-- NIOS V interface signals
 	signal Func7 : std_logic_vector(6 downto 0);
-	signal Func3 : std_logic_vector(3 downto 0);
+	signal Func3 : std_logic_vector(2 downto 0);
 	signal CycleCount : integer range 0 to 255 := 0;
 
 begin

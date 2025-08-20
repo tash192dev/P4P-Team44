@@ -3,14 +3,14 @@
     <Tool>PD-BSP</Tool>
     <BspType>hal2</BspType>
     <BspVersion>default</BspVersion>
-    <BspGeneratedTimeStamp>Aug 19, 2025 5:58:13 PM</BspGeneratedTimeStamp>
-    <BspGeneratedUnixTimeStamp>1755583093971</BspGeneratedUnixTimeStamp>
-    <BspGeneratedLocation>/home/ubuntuaspiretank/p4p/P4P-Team44/top(1)_project/sw/new_bsp</BspGeneratedLocation>
-    <BspSettingsFile>/home/ubuntuaspiretank/p4p/P4P-Team44/top(1)_project/sw/new_bsp/settings.bsp</BspSettingsFile>
+    <BspGeneratedTimeStamp>Aug 20, 2025 5:43:00 PM</BspGeneratedTimeStamp>
+    <BspGeneratedUnixTimeStamp>1755668580983</BspGeneratedUnixTimeStamp>
+    <BspGeneratedLocation>/home/ubuntuaspiretank/p4p/P4P-Team44/top(1)_project/sw/optimus_bsp</BspGeneratedLocation>
+    <BspSettingsFile>/home/ubuntuaspiretank/p4p/P4P-Team44/top(1)_project/sw/optimus_bsp/settings.bsp</BspSettingsFile>
     <QsysFile>../../hw/sys.qsys</QsysFile>
     <QuartusProjectFile>../../hw/top.qpf</QuartusProjectFile>
     <QuartusRevision>top</QuartusRevision>
-    <SystemFileHash>86e75470a9de1d26589d84754bf93eb1c5c11ff22e9d1941dff0c0872ac829d2</SystemFileHash>
+    <SystemFileHash>3890f9ba464936355d355b291bde94263aeed233683a74c9ea0ff2af0b72f6</SystemFileHash>
     <JdiFile>default</JdiFile>
     <Cpu>cpu</Cpu>
     <Setting>
@@ -577,19 +577,19 @@
     </Setting>
     <MemoryMap>
         <slaveDescriptor>jtag_uart</slaveDescriptor>
-        <addressRange>0x00090078 - 0x0009007F</addressRange>
+        <addressRange>0x00210048 - 0x0021004F</addressRange>
         <addressSpan>8</addressSpan>
         <attributes>printable</attributes>
     </MemoryMap>
     <MemoryMap>
         <slaveDescriptor>ram</slaveDescriptor>
-        <addressRange>0x00000000 - 0x0003FFFF</addressRange>
-        <addressSpan>262144</addressSpan>
+        <addressRange>0x00000000 - 0x001FFFFF</addressRange>
+        <addressSpan>2097152</addressSpan>
         <attributes>memory</attributes>
     </MemoryMap>
     <MemoryMap>
         <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-        <addressRange>0x00212040 - 0x00212047</addressRange>
+        <addressRange>0x00210040 - 0x00210047</addressRange>
         <addressSpan>8</addressSpan>
         <attributes></attributes>
     </MemoryMap>

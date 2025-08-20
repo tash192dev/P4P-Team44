@@ -1,9 +1,9 @@
 /*
- * linker.h - Linker script mapping information
+ * alt_sys_init.c - HAL initialization source
  *
  * Machine generated for CPU 'cpu' in SOPC Builder design 'sys'
  *
- * Generated: Tue Aug 19 18:18:21 NZST 2025
+ * Generated: Wed Aug 20 17:43:01 NZST 2025
  */
 
 /*
@@ -47,54 +47,52 @@
  * of California and by the laws of the United States of America.
  */
 
-#ifndef __LINKER_H_
-#define __LINKER_H_
+#include "system.h"
+#include "sys/alt_irq.h"
+#include "sys/alt_sys_init.h"
 
-
-/*
- * BSP controls alt_load() behavior in crt0.
- *
- */
-
-#define ALT_LOAD_EXPLICITLY_CONTROLLED
-
+#include <stddef.h>
 
 /*
- * Base address and span (size in bytes) of each linker region
- *
+ * Device headers
  */
 
-#define RAM_REGION_BASE 0x20
-#define RAM_REGION_SPAN 2097120
-#define RESET_REGION_BASE 0x0
-#define RESET_REGION_SPAN 32
-
+#include "intel_niosv_g_irq.h"
+#include "altera_avalon_jtag_uart.h"
+#include "altera_avalon_sysid_qsys.h"
+#include "intel_niosv_g.h"
 
 /*
- * Devices associated with code sections
- *
+ * Allocate the device storage
  */
 
-#define ALT_EXCEPTIONS_DEVICE RAM
-#define ALT_RESET_DEVICE RAM
-#define ALT_RODATA_DEVICE RAM
-#define ALT_RWDATA_DEVICE RAM
-#define ALT_TEXT_DEVICE RAM
-
+INTEL_NIOSV_G_IRQ_INSTANCE ( CPU, cpu);
+ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART, jtag_uart);
+ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID_QSYS_0, sysid_qsys_0);
+INTEL_NIOSV_G_INSTANCE ( CPU, cpu);
 
 /*
- * Initialization code at the reset address is allowed (e.g. no external bootloader).
- *
+ * Initialize the interrupt controller devices
+ * and then enable interrupts in the CPU.
+ * Called before alt_sys_init().
+ * The "base" parameter is ignored and only
+ * present for backwards-compatibility.
  */
 
-#define ALT_ALLOW_CODE_AT_RESET
-
+void alt_irq_init ( const void* base )
+{
+    INTEL_NIOSV_G_IRQ_INIT ( CPU, cpu);
+    alt_irq_cpu_enable_interrupts();
+}
 
 /*
- * The alt_load() facility is called from crt0 to copy sections into RAM.
- *
+ * Initialize the non-interrupt controller devices.
+ * Called after alt_irq_init().
  */
 
-#define ALT_LOAD_COPY_RWDATA
-
-#endif /* __LINKER_H_ */
+void alt_sys_init( void )
+{
+    ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART, jtag_uart);
+    ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID_QSYS_0, sysid_qsys_0);
+    INTEL_NIOSV_G_INIT ( CPU, cpu);
+}

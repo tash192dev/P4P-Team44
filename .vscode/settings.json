@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.sysj": "java",
+        "custom_instruction.h": "c",
+        "system.h": "c",
+        "unistd.h": "c"
+    }
+}

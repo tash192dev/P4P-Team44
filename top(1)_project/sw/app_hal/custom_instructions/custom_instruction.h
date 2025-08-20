@@ -12,12 +12,12 @@
 
 
 
-#define CONV_OUT(VAL_1, VAL_2, F3) ({ \
- int output; \
- asm volatile (".insn r 0x0B, %[FUNCT3], (0x01), %[out], %[input1], %[input2]" \
-    : [out] "=r" (output) \
-    : [input1] "r" (VAL_1), [input2] "r" (VAL_2), [FUNCT3] "i" (F3)); \
-    output;  \
+#define CONV_OUT(F3) ({ \
+    int output; \
+    asm volatile (".insn r 0x0B, %[FUNCT3], (0x01), %[out], x0, x0" \
+        : [out] "=r" (output) \
+        : [FUNCT3] "i" (F3)); \
+    output; \
 })
 
 #define KERNEL_SET(VAL_1, VAL_2, F3) ({ \

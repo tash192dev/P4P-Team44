@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.14)
 
-add_subdirectory(../big_bsp big_bsp)
+add_subdirectory(../optimus_bsp optimus_bsp)
 
-include(../big_bsp/toolchain.cmake)
+include(../optimus_bsp/toolchain.cmake)
 
 project(app_hal)
 

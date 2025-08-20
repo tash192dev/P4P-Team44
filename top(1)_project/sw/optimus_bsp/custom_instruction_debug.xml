@@ -1,0 +1,18 @@
+<instructions version="1.0">
+<instruction type="R" opcode="0x0B" funct3="0x0" funct7="0x0" str="Test1 $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x1" funct7="0x0" str="Test1 $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x2" funct7="0x0" str="Test1 $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x3" funct7="0x0" str="Test1 $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x4" funct7="0x0" str="Test1 $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x5" funct7="0x0" str="Test1 $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x6" funct7="0x0" str="Test1 $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x7" funct7="0x0" str="Test1 $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x0" funct7="0x10" str="TestO $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x1" funct7="0x10" str="TestO $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x2" funct7="0x10" str="TestO $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x3" funct7="0x10" str="TestO $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x4" funct7="0x10" str="TestO $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x5" funct7="0x10" str="TestO $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x6" funct7="0x10" str="TestO $rd, $rs1, $rs2"/>
+<instruction type="R" opcode="0x0B" funct3="0x7" funct7="0x10" str="TestO $rd, $rs1, $rs2"/>
+</instructions>

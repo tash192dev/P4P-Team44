@@ -3,7 +3,7 @@
  *
  * Machine generated for CPU 'cpu' in SOPC Builder design 'sys'
  *
- * Generated: Tue Aug 19 18:18:21 NZST 2025
+ * Generated: Wed Aug 20 17:43:01 NZST 2025
  */
 
 /*
@@ -121,11 +121,19 @@
  *
  */
 
-#define mnemonic_0x0B_xxxxxxx_xxx(VAL_1, VAL_2, F3, F7) ({ \
+#define Test1(VAL_1, VAL_2, F3) ({ \
  int output; \
- asm volatile (".insn r 0x0B, %[FUNCT3], (0x0 | (%[FUNCT7]<<0)), %[out], %[input1], %[input2]" \
+ asm volatile (".insn r 0x0B, %[FUNCT3], 0x0, %[out], %[input1], %[input2]" \
     : [out] "=r" (output) \
-    : [input1] "r" (VAL_1), [input2] "r" (VAL_2), [FUNCT3] "i" (F3),[FUNCT7] "i" (F7)); \
+    : [input1] "r" (VAL_1), [input2] "r" (VAL_2), [FUNCT3] "i" (F3)); \
+    output;  \
+})
+
+#define TestO(VAL_1, VAL_2, F3) ({ \
+ int output; \
+ asm volatile (".insn r 0x0B, %[FUNCT3], 0x10, %[out], %[input1], %[input2]" \
+    : [out] "=r" (output) \
+    : [input1] "r" (VAL_1), [input2] "r" (VAL_2), [FUNCT3] "i" (F3)); \
     output;  \
 })
 

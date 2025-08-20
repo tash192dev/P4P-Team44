@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2025.08.19.18:05:02"
+ date="2025.08.20.17:42:39"
  outputDirectory="/home/ubuntuaspiretank/p4p/P4P-Team44/top(1)_project/hw/sys/">
  <perimeter>
   <parameter
@@ -1295,19 +1295,19 @@
                 &lt;parameterValueMap&gt;
                     &lt;entry&gt;
                         &lt;key&gt;opcode&lt;/key&gt;
-                        &lt;value&gt;CUSTOM0&lt;/value&gt;
+                        &lt;value&gt;CUSTOM0 CUSTOM0&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;funct7&lt;/key&gt;
-                        &lt;value&gt;xxxxxxx&lt;/value&gt;
+                        &lt;value&gt;0000000 0010000&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;funct3&lt;/key&gt;
-                        &lt;value&gt;xxx&lt;/value&gt;
+                        &lt;value&gt;xxx xxx&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;mnemonic&lt;/key&gt;
-                        &lt;value&gt;{}&lt;/value&gt;
+                        &lt;value&gt;Test1 TestO&lt;/value&gt;
                     &lt;/entry&gt;
                 &lt;/parameterValueMap&gt;
             &lt;/parameters&gt;
@@ -2761,19 +2761,19 @@
                     &lt;parameterValueMap&gt;
                         &lt;entry&gt;
                             &lt;key&gt;opcode&lt;/key&gt;
-                            &lt;value&gt;CUSTOM0&lt;/value&gt;
+                            &lt;value&gt;CUSTOM0 CUSTOM0&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;funct7&lt;/key&gt;
-                            &lt;value&gt;xxxxxxx&lt;/value&gt;
+                            &lt;value&gt;0000000 0010000&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;funct3&lt;/key&gt;
-                            &lt;value&gt;xxx&lt;/value&gt;
+                            &lt;value&gt;xxx xxx&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;mnemonic&lt;/key&gt;
-                            &lt;value&gt;{}&lt;/value&gt;
+                            &lt;value&gt;Test1 TestO&lt;/value&gt;
                         &lt;/entry&gt;
                     &lt;/parameterValueMap&gt;
                 &lt;/parameters&gt;
@@ -5229,7 +5229,7 @@
      value="&lt;hdlParameterDescriptorDefinitionList&gt;
     &lt;hdlParameterDescriptorDefinition&gt;
         &lt;enabled&gt;true&lt;/enabled&gt;
-        &lt;exported&gt;true&lt;/exported&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
         &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
         &lt;parameterName&gt;N&lt;/parameterName&gt;
         &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
@@ -5237,7 +5237,7 @@
     &lt;/hdlParameterDescriptorDefinition&gt;
     &lt;hdlParameterDescriptorDefinition&gt;
         &lt;enabled&gt;true&lt;/enabled&gt;
-        &lt;exported&gt;true&lt;/exported&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
         &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
         &lt;parameterName&gt;K&lt;/parameterName&gt;
         &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
