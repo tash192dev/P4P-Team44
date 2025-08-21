@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="sys" kind="sys" version="1.0" fabric="QSYS">
  <!-- Format version 24.1 115 (Future versions may contain additional information.) -->
- <!-- 2025.08.20.17:42:39 -->
+ <!-- 2025.08.20.19:02:03 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
@@ -1643,19 +1643,19 @@ the requested settings for a module instance. -->
                     <parameterValueMap>
                         <entry>
                             <key>opcode</key>
-                            <value>CUSTOM0 CUSTOM0</value>
+                            <value>CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0</value>
                         </entry>
                         <entry>
                             <key>funct7</key>
-                            <value>0000000 0010000</value>
+                            <value>0000000 0010000 0100000 0110000 1000000</value>
                         </entry>
                         <entry>
                             <key>funct3</key>
-                            <value>xxx xxx</value>
+                            <value>xxx xxx xxx xxx xxx</value>
                         </entry>
                         <entry>
                             <key>mnemonic</key>
-                            <value>Test1 TestO</value>
+                            <value>CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}</value>
                         </entry>
                     </parameterValueMap>
                 </parameters>
@@ -3372,19 +3372,19 @@ the requested settings for a module instance. -->
                 <parameterValueMap>
                     <entry>
                         <key>opcode</key>
-                        <value>CUSTOM0 CUSTOM0</value>
+                        <value>CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0</value>
                     </entry>
                     <entry>
                         <key>funct7</key>
-                        <value>0000000 0010000</value>
+                        <value>0000000 0010000 0100000 0110000 1000000</value>
                     </entry>
                     <entry>
                         <key>funct3</key>
-                        <value>xxx xxx</value>
+                        <value>xxx xxx xxx xxx xxx</value>
                     </entry>
                     <entry>
                         <key>mnemonic</key>
-                        <value>Test1 TestO</value>
+                        <value>CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}</value>
                     </entry>
                 </parameterValueMap>
             </parameters>
@@ -5219,7 +5219,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="opcode">
     <type>java.lang.String</type>
-    <value>CUSTOM0 CUSTOM0</value>
+    <value>CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -5227,7 +5227,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="funct7">
     <type>java.lang.String</type>
-    <value>0000000 0010000</value>
+    <value>0000000 0010000 0100000 0110000 1000000</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -5235,7 +5235,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="funct3">
     <type>java.lang.String</type>
-    <value>xxx xxx</value>
+    <value>xxx xxx xxx xxx xxx</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -5243,7 +5243,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="mnemonic">
     <type>java.lang.String</type>
-    <value>Test1 TestO</value>
+    <value>CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>

@@ -3,7 +3,7 @@
  *
  * Machine generated for CPU 'cpu' in SOPC Builder design 'sys'
  *
- * Generated: Wed Aug 20 17:43:01 NZST 2025
+ * Generated: Wed Aug 20 18:50:10 NZST 2025
  */
 
 /*
@@ -121,7 +121,15 @@
  *
  */
 
-#define Test1(VAL_1, VAL_2, F3) ({ \
+#define BIAS_SET(VAL_1, VAL_2, F3) ({ \
+ int output; \
+ asm volatile (".insn r 0x0B, %[FUNCT3], 0x30, %[out], %[input1], %[input2]" \
+    : [out] "=r" (output) \
+    : [input1] "r" (VAL_1), [input2] "r" (VAL_2), [FUNCT3] "i" (F3)); \
+    output;  \
+})
+
+#define CONV_IN(VAL_1, VAL_2, F3) ({ \
  int output; \
  asm volatile (".insn r 0x0B, %[FUNCT3], 0x0, %[out], %[input1], %[input2]" \
     : [out] "=r" (output) \
@@ -129,9 +137,17 @@
     output;  \
 })
 
-#define TestO(VAL_1, VAL_2, F3) ({ \
+#define CONV_OUT(VAL_1, VAL_2, F3) ({ \
  int output; \
  asm volatile (".insn r 0x0B, %[FUNCT3], 0x10, %[out], %[input1], %[input2]" \
+    : [out] "=r" (output) \
+    : [input1] "r" (VAL_1), [input2] "r" (VAL_2), [FUNCT3] "i" (F3)); \
+    output;  \
+})
+
+#define KERNEL_SET(VAL_1, VAL_2, F3) ({ \
+ int output; \
+ asm volatile (".insn r 0x0B, %[FUNCT3], 0x20, %[out], %[input1], %[input2]" \
     : [out] "=r" (output) \
     : [input1] "r" (VAL_1), [input2] "r" (VAL_2), [FUNCT3] "i" (F3)); \
     output;  \

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2025.08.20.17:42:39"
+ date="2025.08.20.19:02:04"
  outputDirectory="/home/ubuntuaspiretank/p4p/P4P-Team44/top(1)_project/hw/sys/">
  <perimeter>
   <parameter
@@ -1295,19 +1295,19 @@
                 &lt;parameterValueMap&gt;
                     &lt;entry&gt;
                         &lt;key&gt;opcode&lt;/key&gt;
-                        &lt;value&gt;CUSTOM0 CUSTOM0&lt;/value&gt;
+                        &lt;value&gt;CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;funct7&lt;/key&gt;
-                        &lt;value&gt;0000000 0010000&lt;/value&gt;
+                        &lt;value&gt;0000000 0010000 0100000 0110000 1000000&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;funct3&lt;/key&gt;
-                        &lt;value&gt;xxx xxx&lt;/value&gt;
+                        &lt;value&gt;xxx xxx xxx xxx xxx&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;mnemonic&lt;/key&gt;
-                        &lt;value&gt;Test1 TestO&lt;/value&gt;
+                        &lt;value&gt;CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}&lt;/value&gt;
                     &lt;/entry&gt;
                 &lt;/parameterValueMap&gt;
             &lt;/parameters&gt;
@@ -2761,19 +2761,19 @@
                     &lt;parameterValueMap&gt;
                         &lt;entry&gt;
                             &lt;key&gt;opcode&lt;/key&gt;
-                            &lt;value&gt;CUSTOM0 CUSTOM0&lt;/value&gt;
+                            &lt;value&gt;CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;funct7&lt;/key&gt;
-                            &lt;value&gt;0000000 0010000&lt;/value&gt;
+                            &lt;value&gt;0000000 0010000 0100000 0110000 1000000&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;funct3&lt;/key&gt;
-                            &lt;value&gt;xxx xxx&lt;/value&gt;
+                            &lt;value&gt;xxx xxx xxx xxx xxx&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;mnemonic&lt;/key&gt;
-                            &lt;value&gt;Test1 TestO&lt;/value&gt;
+                            &lt;value&gt;CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}&lt;/value&gt;
                         &lt;/entry&gt;
                     &lt;/parameterValueMap&gt;
                 &lt;/parameters&gt;

@@ -33,6 +33,14 @@ end entity nvmm;
 
 architecture rtl of nvmm is
 
+	-- Systolic array interface signals
+	signal SysIn : std_logic_vector((N*8)-1 downto 0) := (others => '0');
+	signal SysOut : std_logic_vector((N*8)-1 downto 0) := (others => '0');
+	signal SysBias : std_logic_vector((N*8)-1 downto 0) := (others => '0');
+	signal SysKernel : std_logic_vector((N*8)-1 downto 0) := (others => '0');
+	signal SysWeightMove : std_logic;
+	signal Stride : integer range 0 to 255 := 0;
+
 	-- NIOS V interface signals
 	signal Func7 : std_logic_vector(6 downto 0);
 	signal Func3 : std_logic_vector(2 downto 0);
@@ -56,14 +64,112 @@ begin
 				CycleCount <= CycleCount + 1;
 
 				case(Func7(6 downto 4)) is
+					-- CONV IN
 					when "000" =>
-						if CycleCount >= 4 then
+						Case(Func3) is
+							-- LSB
+							when "000" => 	
+								SysIn(31 downto 0) <= NVMM_data0;
+								SysIn(63 downto 32) <= NVMM_data1;
+							when "001" =>
+								SysIn(95 downto 64) <= NVMM_data0;
+								SysIn(127 downto 96) <= NVMM_data1;
+							when "010" =>
+								SysIn(159 downto 128) <= NVMM_data0;
+								SysIn(191 downto 160) <= NVMM_data1;
+							-- MSB
+							when "011" =>
+								SysIn(199 downto 192) <= NVMM_data0(7 downto 0);
+							-- Not used for our test sizing will be added later
+							when others =>
+								NULL;
+						end case;
+
+						Enable <= '0';
+						NVMM_done <= '1';
+						CycleCount <= 0;
+						NVMM_result <= (others => '0');
+
+
+					-- CONV OUT
+					when "001" =>
+						-- Hardcoded for K = 5 N = 25
+						F3IDX := to_integer(Unsigned(Func3)) * 32;
+						
+						if F3IDX >= 192 then
+							NVMM_Result <= X"000000" & SysOut(199 downto 192); 
+						else
+							NVMM_Result <= SysOut(F3IDX + 31 downto F3IDX);
+						end if;
+						Enable <= '0';
+						NVMM_done <= '1';
+						CycleCount <= 0;
+
+
+					-- Kernel SET
+					when "010" => 
+						-- Hardcoded for K = 5 N = 25
+						Case(Func3) is
+							-- LSB
+							when "000" => 	
+								SysKernel(31 downto 0) <= NVMM_data0;
+								SysKernel(63 downto 32) <= NVMM_data1;
+							when "001" =>
+								SysKernel(95 downto 64) <= NVMM_data0;
+								SysKernel(127 downto 96) <= NVMM_data1;
+							when "010" =>
+								SysKernel(159 downto 128) <= NVMM_data0;
+								SysKernel(191 downto 160) <= NVMM_data1;
+							-- MSB
+							when "011" =>
+								SysKernel(199 downto 192) <= NVMM_data0(7 downto 0);
+								SysWeightMove <= '1';
+							-- Not used for our test sizing will be added later
+							when others =>
+								NULL;
+						end case;
+						Enable <= '0';
+						NVMM_done <= '1';
+						CycleCount <= 0;
+						NVMM_result <= (others => '0');
+
+
+
+					-- BIAS SET
+					when "011" => 
+						-- Hardcoded for K = 5 N = 25
+						Case(Func3) is
+							-- LSB
+							when "000" => 	
+								SysBias(31 downto 0) <= NVMM_data0;
+								SysBias(63 downto 32) <= NVMM_data1;
+							when "001" =>
+								SysBias(95 downto 64) <= NVMM_data0;
+								SysBias(127 downto 96) <= NVMM_data1;
+							when "010" =>
+								SysBias(159 downto 128) <= NVMM_data0;
+								SysBias(191 downto 160) <= NVMM_data1;
+							when "011" =>
+								SysBias(199 downto 192) <= NVMM_data0(7 downto 0);
+							-- Not used for our test sizing will be added later
+							when others =>
+								NULL;
+						end case;
+						Enable <= '0';
+						NVMM_done <= '1';
+						CycleCount <= 0;
+						NVMM_result <= (others => '0');
+
+					-- SYS DELAY
+					when "100" =>
+						if CycleCount >= 25 then
 							Enable <= '0';
 							NVMM_done <= '1';
 							CycleCount <= 0;
-							NVMM_result <= X"000000FF";
+							NVMM_result <= X"00000019";
 						end if;
 
+					-- Others
 					when others =>
 							Enable <= '0';
 							NVMM_done <= '1';
@@ -74,11 +180,10 @@ begin
 
 			else
 				CycleCount <= 0;
-
+				SysWeightMove <= '0';
 				
 				NVMM_done <= '0';
 			end if;
 		end if;
 	end process;
 end architecture rtl; -- of nvmm
-

@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.14)
 
-add_subdirectory(../optimus_bsp optimus_bsp)
+add_subdirectory(../deeznuts_bsp deeznuts_bsp)
 
-include(../optimus_bsp/toolchain.cmake)
+include(../deeznuts_bsp/toolchain.cmake)
 
 project(app_hal)
 
@@ -15,7 +15,6 @@ target_sources(app_hal.elf
 
 target_include_directories(app_hal.elf
     PRIVATE
-        custom_instructions
     PUBLIC
 )
 

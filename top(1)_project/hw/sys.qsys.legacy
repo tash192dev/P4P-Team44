@@ -1248,19 +1248,19 @@ https://fpgasoftware.intel.com/eula.-->
                     <parameterValueMap>
                         <entry>
                             <key>opcode</key>
-                            <value>CUSTOM0 CUSTOM0</value>
+                            <value>CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0</value>
                         </entry>
                         <entry>
                             <key>funct7</key>
-                            <value>0000000 0010000</value>
+                            <value>0000000 0010000 0100000 0110000 1000000</value>
                         </entry>
                         <entry>
                             <key>funct3</key>
-                            <value>xxx xxx</value>
+                            <value>xxx xxx xxx xxx xxx</value>
                         </entry>
                         <entry>
                             <key>mnemonic</key>
-                            <value>Test1 TestO</value>
+                            <value>CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}</value>
                         </entry>
                     </parameterValueMap>
                 </parameters>
@@ -2913,19 +2913,19 @@ https://fpgasoftware.intel.com/eula.-->
                 <parameterValueMap>
                     <entry>
                         <key>opcode</key>
-                        <value>CUSTOM0 CUSTOM0</value>
+                        <value>CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0</value>
                     </entry>
                     <entry>
                         <key>funct7</key>
-                        <value>0000000 0010000</value>
+                        <value>0000000 0010000 0100000 0110000 1000000</value>
                     </entry>
                     <entry>
                         <key>funct3</key>
-                        <value>xxx xxx</value>
+                        <value>xxx xxx xxx xxx xxx</value>
                     </entry>
                     <entry>
                         <key>mnemonic</key>
-                        <value>Test1 TestO</value>
+                        <value>CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}</value>
                     </entry>
                 </parameterValueMap>
             </parameters>
