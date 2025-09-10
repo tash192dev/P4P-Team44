@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.14)
 
-add_subdirectory(../deeznuts_bsp deeznuts_bsp)
+add_subdirectory(../alliwannado_bsp alliwannado_bsp)
 
-include(../deeznuts_bsp/toolchain.cmake)
+include(../alliwannado_bsp/toolchain.cmake)
 
 project(app_hal)
 

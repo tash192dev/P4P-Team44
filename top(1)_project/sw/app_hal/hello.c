@@ -16,7 +16,7 @@ int main()
     // int sys_id;
 
     printf("HELLO FROM NIOSV WITH NVMM HOPEFULLY IT WORKS");
-
+    
     __int8_t kernel_1[KERNEL_SIZE] = {0x00, 0x00, 0x01, 0x01, 0x00,
                                       0x01, 0x00, 0x01, 0x00, 0x00,
                                       0x00, 0x01, 0x00, 0x01, 0x00,
@@ -35,14 +35,8 @@ int main()
                                 0x0F, 0x10, 0x11, 0x12, 0x13,
                                 0x14, 0x15, 0x16, 0x17, 0x18};
 
-
-    
-
-
     // int data_in_a = 0;
     // int data_in_b = 0;
-
-
 
     int output = 0;
 
@@ -55,14 +49,14 @@ int main()
         kernel_a = 0x00000000;
         kernel_a |= kernel_1[i] << 0;
         kernel_a |= kernel_2[i] << 8;
-         KERNEL_SET(kernel_a, 0, 0);
+        KERNEL_SET(kernel_a, 0, 0);
         // rest remain empty
-//        printf("Kernel A %x, index %d", kernel_a, i);
+        //        printf("Kernel A %x, index %d", kernel_a, i);
         KERNEL_SET(0, 0, 1);
         KERNEL_SET(0, 0, 2);
         KERNEL_SET(0, 0, 3);
     }
-    
+
     BIAS_SET(0, 0, 1);
     BIAS_SET(0, 0, 2);
     BIAS_SET(0, 0, 3);
@@ -101,17 +95,33 @@ int main()
     // Hard coded cause why not lol
     data_a = Data[25] << 0;
     CONV_IN(data_a, 0, 3);
-    
+
     usleep(1000000);
-    
+
     // print results
     output = CONV_OUT(0, 0, 0);
-
     printf("\nFirst output %x", output);
 
     output = CONV_OUT(0, 0, 1);
-
     printf("\nSecond output %x", output);
+
+    output = CONV_OUT(0, 0, 2);
+    printf("\nThird output %x", output);
+
+    output = CONV_OUT(0, 0, 3);
+    printf("\nFourth output %x", output);
+
+    output = CONV_OUT(0, 0, 4);
+    printf("\nFifth output %x", output);
+
+    output = CONV_OUT(0, 0, 5);
+    printf("\nSixth output %x", output);
+
+    output = CONV_OUT(0, 0, 6);
+    printf("\nSeventh output %x", output);
+
+    output = CONV_OUT(0, 0, 7);
+    printf("\nEighth output %x", output);
 
     // printf("Print the value of System ID \n");
     // sys_id = IORD_ALTERA_AVALON_SYSID_QSYS_ID(SYSID_QSYS_0_BASE);

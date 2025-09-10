@@ -199,7 +199,7 @@
  */
 
 #define ALT_MAX_FD 32
-#define ALT_SYS_CLK CPU
+#define ALT_SYS_CLK CPUqua
 #define ALT_TIMESTAMP_CLK CPU
 #define INTEL_FPGA_DFL_START_ADDRESS 0xffffffffffffffff
 #define INTEL_FPGA_USE_DFL_WALKER 0
