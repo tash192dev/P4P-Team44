@@ -20,21 +20,22 @@ end PE;
 
 -- Weight Stationary Diagonal PE
 architecture int8 of PE is
-  signal Weight : signed(7 downto 0);
+  signal Weight : signed(7 downto 0) := X"00";
 begin
     process(clock)
         variable temp : signed(15 downto 0);
     begin
         if rising_edge(clock) then
           if W_shift = '1' then
-            Weight <= W_in;
-            W_out <= W_in;
+            Weight <= W_in; -- This is never running now and I am straight geeking out 
           end if;
-
+          
           I_out <= I_in;
           temp := O_in + (I_in * Weight);
           O_out <= resize(temp, 8);
 
         end if;
     end process;
+
+    W_out <= Weight;
 end int8 ; --PE

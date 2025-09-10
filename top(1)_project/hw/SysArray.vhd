@@ -40,7 +40,7 @@ architecture rtl of SysArray is
   type MatSize is array(0 to N-1, 0 to N-1) of signed(7 downto 0);
   type WeightSize is array(0 to N, 0 to N-1) of signed(7 downto 0);
 
-  signal Weight : WeightSize;
+  signal Weight : WeightSize; --:= (others=> (others=>X"00"));
   signal Carry  : SysSize; 
   signal Sum    : SysSize;
 
@@ -51,14 +51,12 @@ architecture rtl of SysArray is
   signal SB     : VecSize;
   signal SW     : VecSize;
 
-  -- Test benching signals
-  signal clock: std_logic := '0';
 begin
 
   RowGen: for row in 0 to N-1 generate
     ColGen: for col in 0 to N-1 generate
       PE_X: PE port map(
-        clock => clock,
+        clock => Sys_Clk,
         W_shift => Weight_Shift,
         W_in => Weight(row, Col),
         W_out => Weight(row + 1, (col + 1) Mod N),
@@ -72,7 +70,7 @@ begin
   Weight(0, row) <= SW(row);
   Carry(row, 0) <= SI(row);
   Sum(row, 0) <= SB(row);
-  SO(N-row-1) <= Sum((row + 1) mod N, N);
+  SO(N-row-1) <= Sum((row - 1) mod N, N);
   
   end generate RowGen;
 
