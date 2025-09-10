@@ -76,6 +76,8 @@ begin
   
   end generate RowGen;
 
+  Weight_shift <= Sys_Wm;
+
   IO_MAP: for A in 0 to N-1 generate
     -- There should be a better way to do IO with generics
 
