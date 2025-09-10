@@ -43,7 +43,7 @@ on the Quartus Prime software download page.
 		(text "clk" (rect 73 71 164 152)(font "SansSerif" (color 0 0 0)))
 		(text "reset" (rect 39 96 108 205)(font "SansSerif" (color 128 0 0)(font_size 9)))
 		(text "reset" (rect 73 121 176 252)(font "SansSerif" (color 0 0 0)))
-		(text " sys " (rect 168 151 366 312)(font "SansSerif" ))
+		(text " system " (rect 152 151 352 312)(font "SansSerif" ))
 		(line (pt 68 34)(pt 119 34)(line_width 1))
 		(line (pt 119 34)(pt 119 151)(line_width 1))
 		(line (pt 68 151)(pt 119 151)(line_width 1))

@@ -80,6 +80,14 @@ https://fpgasoftware.intel.com/eula.-->
          type = "int";
       }
    }
+   element nvmm_1
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
    element ram
    {
       datum _sortIndex
@@ -5174,6 +5182,277 @@ https://fpgasoftware.intel.com/eula.-->
   <parameter name="hlsFile" value="" />
   <parameter name="liveModuleName" value="nvmm_0" />
   <parameter name="logicalView">ip/sys/sys_nvmm_0.ip</parameter>
+  <parameter name="moduleAssignmentDefinition"><![CDATA[<assignmentDefinition>
+    <assignmentValueMap/>
+</assignmentDefinition>]]></parameter>
+  <parameter name="svInterfaceDefinition" value="" />
+ </module>
+ <module
+   name="nvmm_1"
+   kind="altera_generic_component"
+   version="1.0"
+   enabled="1">
+  <parameter name="bspCpu" value="false" />
+  <parameter name="componentDefinition"><![CDATA[<componentDefinition>
+    <boundary>
+        <interfaces>
+            <interface>
+                <name>NVMM</name>
+                <type>niosv_custom_instruction</type>
+                <isStart>false</isStart>
+                <ports>
+                    <port>
+                        <name>NVMM_alu_result</name>
+                        <role>alu_result</role>
+                        <direction>Input</direction>
+                        <width>32</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_clk</name>
+                        <role>clk</role>
+                        <direction>Input</direction>
+                        <width>1</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_ctrl</name>
+                        <role>ctrl</role>
+                        <direction>Input</direction>
+                        <width>32</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_data0</name>
+                        <role>data0</role>
+                        <direction>Input</direction>
+                        <width>32</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_data1</name>
+                        <role>data1</role>
+                        <direction>Input</direction>
+                        <width>32</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_done</name>
+                        <role>done</role>
+                        <direction>Output</direction>
+                        <width>1</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_enable</name>
+                        <role>enable</role>
+                        <direction>Input</direction>
+                        <width>1</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_reset</name>
+                        <role>reset</role>
+                        <direction>Input</direction>
+                        <width>1</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_result</name>
+                        <role>result</role>
+                        <direction>Output</direction>
+                        <width>32</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                </ports>
+                <assignments>
+                    <assignmentValueMap/>
+                </assignments>
+            </interface>
+        </interfaces>
+    </boundary>
+    <originalModuleInfo>
+        <className>nvmm</className>
+        <version>1.0</version>
+        <displayName>nvmm</displayName>
+    </originalModuleInfo>
+    <systemInfoParameterDescriptors>
+        <descriptors/>
+    </systemInfoParameterDescriptors>
+    <systemInfos>
+        <connPtSystemInfos/>
+    </systemInfos>
+</componentDefinition>]]></parameter>
+  <parameter name="cpuInfo" value="" />
+  <parameter name="defaultBoundary"><![CDATA[<boundaryDefinition>
+    <interfaces>
+        <interface>
+            <name>NVMM</name>
+            <type>niosv_custom_instruction</type>
+            <isStart>false</isStart>
+            <ports>
+                <port>
+                    <name>NVMM_alu_result</name>
+                    <role>alu_result</role>
+                    <direction>Input</direction>
+                    <width>32</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_clk</name>
+                    <role>clk</role>
+                    <direction>Input</direction>
+                    <width>1</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_ctrl</name>
+                    <role>ctrl</role>
+                    <direction>Input</direction>
+                    <width>32</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_data0</name>
+                    <role>data0</role>
+                    <direction>Input</direction>
+                    <width>32</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_data1</name>
+                    <role>data1</role>
+                    <direction>Input</direction>
+                    <width>32</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_done</name>
+                    <role>done</role>
+                    <direction>Output</direction>
+                    <width>1</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_enable</name>
+                    <role>enable</role>
+                    <direction>Input</direction>
+                    <width>1</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_reset</name>
+                    <role>reset</role>
+                    <direction>Input</direction>
+                    <width>1</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_result</name>
+                    <role>result</role>
+                    <direction>Output</direction>
+                    <width>32</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+            </ports>
+            <assignments>
+                <assignmentValueMap/>
+            </assignments>
+        </interface>
+    </interfaces>
+</boundaryDefinition>]]></parameter>
+  <parameter name="generationInfoDefinition"><![CDATA[<generationInfoDefinition>
+    <hdlLibraryName>sys_nvmm_1</hdlLibraryName>
+    <fileSets>
+        <fileSet>
+            <fileSetName>sys_nvmm_1</fileSetName>
+            <fileSetFixedName>sys_nvmm_1</fileSetFixedName>
+            <fileSetKind>QUARTUS_SYNTH</fileSetKind>
+            <fileSetFiles/>
+        </fileSet>
+        <fileSet>
+            <fileSetName>sys_nvmm_1</fileSetName>
+            <fileSetFixedName>sys_nvmm_1</fileSetFixedName>
+            <fileSetKind>SIM_VERILOG</fileSetKind>
+            <fileSetFiles/>
+        </fileSet>
+        <fileSet>
+            <fileSetName>sys_nvmm_1</fileSetName>
+            <fileSetFixedName>sys_nvmm_1</fileSetFixedName>
+            <fileSetKind>SIM_VHDL</fileSetKind>
+            <fileSetFiles/>
+        </fileSet>
+        <fileSet>
+            <fileSetName>sys_nvmm_1</fileSetName>
+            <fileSetFixedName>sys_nvmm_1</fileSetFixedName>
+            <fileSetKind>CDC</fileSetKind>
+            <fileSetFiles/>
+        </fileSet>
+        <fileSet>
+            <fileSetName>sys_nvmm_1</fileSetName>
+            <fileSetFixedName>sys_nvmm_1</fileSetFixedName>
+            <fileSetKind>CDC_VHDL</fileSetKind>
+            <fileSetFiles/>
+        </fileSet>
+    </fileSets>
+</generationInfoDefinition>]]></parameter>
+  <parameter name="hdlParameters"><![CDATA[<hdlParameterDescriptorDefinitionList>
+    <hdlParameterDescriptorDefinition>
+        <enabled>true</enabled>
+        <exported>false</exported>
+        <parameterHdlType>INTEGER</parameterHdlType>
+        <parameterName>N</parameterName>
+        <parameterType>java.lang.Integer</parameterType>
+        <parameterValue>25</parameterValue>
+    </hdlParameterDescriptorDefinition>
+    <hdlParameterDescriptorDefinition>
+        <enabled>true</enabled>
+        <exported>false</exported>
+        <parameterHdlType>INTEGER</parameterHdlType>
+        <parameterName>K</parameterName>
+        <parameterType>java.lang.Integer</parameterType>
+        <parameterValue>5</parameterValue>
+    </hdlParameterDescriptorDefinition>
+</hdlParameterDescriptorDefinitionList>]]></parameter>
+  <parameter name="hlsFile" value="" />
+  <parameter name="liveModuleName" value="nvmm_1" />
+  <parameter name="logicalView">ip/sys/sys_nvmm_1.ip</parameter>
   <parameter name="moduleAssignmentDefinition"><![CDATA[<assignmentDefinition>
     <assignmentValueMap/>
 </assignmentDefinition>]]></parameter>

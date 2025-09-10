@@ -849,7 +849,7 @@
 													<placeholder>dock.single.Interface\ Resolver\ \-\ Beta</placeholder>
 												</placeholders>
 											</leaf>
-											<node nodeId="1372710005721" orientation="HORIZONTAL" divider="0.2116371933827724">
+											<node nodeId="1372710005721" orientation="HORIZONTAL" divider="0.1207843137254902">
 												<leaf id="2" nodeId="1375985003630">
 													<placeholders>
 														<placeholder>dock.single.IP\ Catalog</placeholder>
@@ -878,7 +878,7 @@
 														</entry>
 													</placeholder-map>
 												</leaf>
-												<node nodeId="1372710005727" orientation="HORIZONTAL" divider="0.6203657910985099">
+												<node nodeId="1372710005727" orientation="HORIZONTAL" divider="0.4926120421724288">
 													<node nodeId="1372710005733" orientation="VERTICAL" divider="0.75">
 														<node nodeId="1447440146313" orientation="VERTICAL" divider="0.7495667244367418">
 															<leaf id="0" nodeId="1372710005735">
@@ -1301,7 +1301,7 @@
 								</child>
 								<child>
 									<layout factory="delegate_StackDockStationFactory">
-										<selected>1</selected>
+										<selected>0</selected>
 										<placeholders>
 											<version>0</version>
 											<format>dock.PlaceholderList</format>

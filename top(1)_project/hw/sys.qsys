@@ -96,6 +96,14 @@ https://fpgasoftware.intel.com/eula.-->
          type = "int";
       }
    }
+   element nvmm_1
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
    element ram
    {
       datum _sortIndex
@@ -5470,6 +5478,327 @@ https://fpgasoftware.intel.com/eula.-->
               <ipxact:name>logicalView</ipxact:name>
               <ipxact:displayName>Logical view</ipxact:displayName>
               <ipxact:value>ip/sys/sys_nvmm_0.ip</ipxact:value>
+            </ipxact:parameter>
+            <ipxact:parameter parameterId="moduleAssignmentDefinition" type="string">
+              <ipxact:name>moduleAssignmentDefinition</ipxact:name>
+              <ipxact:displayName>Module Assignments</ipxact:displayName>
+              <ipxact:value>&lt;assignmentDefinition&gt;
+    &lt;assignmentValueMap/&gt;
+&lt;/assignmentDefinition&gt;</ipxact:value>
+            </ipxact:parameter>
+            <ipxact:parameter parameterId="svInterfaceDefinition" type="string">
+              <ipxact:name>svInterfaceDefinition</ipxact:name>
+              <ipxact:displayName>System Verilog Interface definition</ipxact:displayName>
+              <ipxact:value></ipxact:value>
+            </ipxact:parameter>
+          </ipxact:parameters>
+        </altera:altera_module_parameters>
+      </altera:module>
+      <altera:module altera:enabled="true" altera:auto_export="false">
+        <altera:entity_info>
+          <ipxact:vendor>Altera Corporation</ipxact:vendor>
+          <ipxact:library>nvmm_1</ipxact:library>
+          <ipxact:name>altera_generic_component</ipxact:name>
+          <ipxact:version>1.0</ipxact:version>
+        </altera:entity_info>
+        <altera:altera_module_parameters>
+          <ipxact:parameters>
+            <ipxact:parameter parameterId="bspCpu" type="bit">
+              <ipxact:name>bspCpu</ipxact:name>
+              <ipxact:displayName>BSP CPU</ipxact:displayName>
+              <ipxact:value>false</ipxact:value>
+            </ipxact:parameter>
+            <ipxact:parameter parameterId="componentDefinition" type="string">
+              <ipxact:name>componentDefinition</ipxact:name>
+              <ipxact:displayName>Component definition</ipxact:displayName>
+              <ipxact:value>&lt;componentDefinition&gt;
+    &lt;boundary&gt;
+        &lt;interfaces&gt;
+            &lt;interface&gt;
+                &lt;name&gt;NVMM&lt;/name&gt;
+                &lt;type&gt;niosv_custom_instruction&lt;/type&gt;
+                &lt;isStart&gt;false&lt;/isStart&gt;
+                &lt;ports&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;NVMM_alu_result&lt;/name&gt;
+                        &lt;role&gt;alu_result&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;32&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;NVMM_clk&lt;/name&gt;
+                        &lt;role&gt;clk&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;NVMM_ctrl&lt;/name&gt;
+                        &lt;role&gt;ctrl&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;32&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;NVMM_data0&lt;/name&gt;
+                        &lt;role&gt;data0&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;32&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;NVMM_data1&lt;/name&gt;
+                        &lt;role&gt;data1&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;32&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;NVMM_done&lt;/name&gt;
+                        &lt;role&gt;done&lt;/role&gt;
+                        &lt;direction&gt;Output&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;NVMM_enable&lt;/name&gt;
+                        &lt;role&gt;enable&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;NVMM_reset&lt;/name&gt;
+                        &lt;role&gt;reset&lt;/role&gt;
+                        &lt;direction&gt;Input&lt;/direction&gt;
+                        &lt;width&gt;1&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                    &lt;port&gt;
+                        &lt;name&gt;NVMM_result&lt;/name&gt;
+                        &lt;role&gt;result&lt;/role&gt;
+                        &lt;direction&gt;Output&lt;/direction&gt;
+                        &lt;width&gt;32&lt;/width&gt;
+                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                        &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
+                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                    &lt;/port&gt;
+                &lt;/ports&gt;
+                &lt;assignments&gt;
+                    &lt;assignmentValueMap/&gt;
+                &lt;/assignments&gt;
+            &lt;/interface&gt;
+        &lt;/interfaces&gt;
+    &lt;/boundary&gt;
+    &lt;originalModuleInfo&gt;
+        &lt;className&gt;nvmm&lt;/className&gt;
+        &lt;version&gt;1.0&lt;/version&gt;
+        &lt;displayName&gt;nvmm&lt;/displayName&gt;
+    &lt;/originalModuleInfo&gt;
+    &lt;systemInfoParameterDescriptors&gt;
+        &lt;descriptors/&gt;
+    &lt;/systemInfoParameterDescriptors&gt;
+    &lt;systemInfos&gt;
+        &lt;connPtSystemInfos/&gt;
+    &lt;/systemInfos&gt;
+&lt;/componentDefinition&gt;</ipxact:value>
+            </ipxact:parameter>
+            <ipxact:parameter parameterId="cpuInfo" type="string">
+              <ipxact:name>cpuInfo</ipxact:name>
+              <ipxact:displayName>Cpu Info</ipxact:displayName>
+              <ipxact:value></ipxact:value>
+            </ipxact:parameter>
+            <ipxact:parameter parameterId="defaultBoundary" type="string">
+              <ipxact:name>defaultBoundary</ipxact:name>
+              <ipxact:displayName>Default boundary</ipxact:displayName>
+              <ipxact:value>&lt;boundaryDefinition&gt;
+    &lt;interfaces&gt;
+        &lt;interface&gt;
+            &lt;name&gt;NVMM&lt;/name&gt;
+            &lt;type&gt;niosv_custom_instruction&lt;/type&gt;
+            &lt;isStart&gt;false&lt;/isStart&gt;
+            &lt;ports&gt;
+                &lt;port&gt;
+                    &lt;name&gt;NVMM_alu_result&lt;/name&gt;
+                    &lt;role&gt;alu_result&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;32&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+                &lt;port&gt;
+                    &lt;name&gt;NVMM_clk&lt;/name&gt;
+                    &lt;role&gt;clk&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+                &lt;port&gt;
+                    &lt;name&gt;NVMM_ctrl&lt;/name&gt;
+                    &lt;role&gt;ctrl&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;32&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+                &lt;port&gt;
+                    &lt;name&gt;NVMM_data0&lt;/name&gt;
+                    &lt;role&gt;data0&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;32&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+                &lt;port&gt;
+                    &lt;name&gt;NVMM_data1&lt;/name&gt;
+                    &lt;role&gt;data1&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;32&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+                &lt;port&gt;
+                    &lt;name&gt;NVMM_done&lt;/name&gt;
+                    &lt;role&gt;done&lt;/role&gt;
+                    &lt;direction&gt;Output&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+                &lt;port&gt;
+                    &lt;name&gt;NVMM_enable&lt;/name&gt;
+                    &lt;role&gt;enable&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+                &lt;port&gt;
+                    &lt;name&gt;NVMM_reset&lt;/name&gt;
+                    &lt;role&gt;reset&lt;/role&gt;
+                    &lt;direction&gt;Input&lt;/direction&gt;
+                    &lt;width&gt;1&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+                &lt;port&gt;
+                    &lt;name&gt;NVMM_result&lt;/name&gt;
+                    &lt;role&gt;result&lt;/role&gt;
+                    &lt;direction&gt;Output&lt;/direction&gt;
+                    &lt;width&gt;32&lt;/width&gt;
+                    &lt;lowerBound&gt;0&lt;/lowerBound&gt;
+                    &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
+                    &lt;terminationValue&gt;0&lt;/terminationValue&gt;
+                &lt;/port&gt;
+            &lt;/ports&gt;
+            &lt;assignments&gt;
+                &lt;assignmentValueMap/&gt;
+            &lt;/assignments&gt;
+        &lt;/interface&gt;
+    &lt;/interfaces&gt;
+&lt;/boundaryDefinition&gt;</ipxact:value>
+            </ipxact:parameter>
+            <ipxact:parameter parameterId="generationInfoDefinition" type="string">
+              <ipxact:name>generationInfoDefinition</ipxact:name>
+              <ipxact:displayName>Generation Behavior</ipxact:displayName>
+              <ipxact:value>&lt;generationInfoDefinition&gt;
+    &lt;hdlLibraryName&gt;sys_nvmm_1&lt;/hdlLibraryName&gt;
+    &lt;fileSets&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;sys_nvmm_1&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;sys_nvmm_1&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;QUARTUS_SYNTH&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;sys_nvmm_1&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;sys_nvmm_1&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VERILOG&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;sys_nvmm_1&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;sys_nvmm_1&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;SIM_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;sys_nvmm_1&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;sys_nvmm_1&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+        &lt;fileSet&gt;
+            &lt;fileSetName&gt;sys_nvmm_1&lt;/fileSetName&gt;
+            &lt;fileSetFixedName&gt;sys_nvmm_1&lt;/fileSetFixedName&gt;
+            &lt;fileSetKind&gt;CDC_VHDL&lt;/fileSetKind&gt;
+            &lt;fileSetFiles/&gt;
+        &lt;/fileSet&gt;
+    &lt;/fileSets&gt;
+&lt;/generationInfoDefinition&gt;</ipxact:value>
+            </ipxact:parameter>
+            <ipxact:parameter parameterId="hdlParameters" type="string">
+              <ipxact:name>hdlParameters</ipxact:name>
+              <ipxact:displayName>HDL Parameters</ipxact:displayName>
+              <ipxact:value>&lt;hdlParameterDescriptorDefinitionList&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;N&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;25&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+    &lt;hdlParameterDescriptorDefinition&gt;
+        &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;exported&gt;false&lt;/exported&gt;
+        &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
+        &lt;parameterName&gt;K&lt;/parameterName&gt;
+        &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
+        &lt;parameterValue&gt;5&lt;/parameterValue&gt;
+    &lt;/hdlParameterDescriptorDefinition&gt;
+&lt;/hdlParameterDescriptorDefinitionList&gt;</ipxact:value>
+            </ipxact:parameter>
+            <ipxact:parameter parameterId="hlsFile" type="string">
+              <ipxact:name>hlsFile</ipxact:name>
+              <ipxact:displayName>HLS file</ipxact:displayName>
+              <ipxact:value></ipxact:value>
+            </ipxact:parameter>
+            <ipxact:parameter parameterId="liveModuleName" type="string">
+              <ipxact:name>liveModuleName</ipxact:name>
+              <ipxact:displayName>Live Module Name</ipxact:displayName>
+              <ipxact:value>nvmm_1</ipxact:value>
+            </ipxact:parameter>
+            <ipxact:parameter parameterId="logicalView" type="string">
+              <ipxact:name>logicalView</ipxact:name>
+              <ipxact:displayName>Logical view</ipxact:displayName>
+              <ipxact:value>ip/sys/sys_nvmm_1.ip</ipxact:value>
             </ipxact:parameter>
             <ipxact:parameter parameterId="moduleAssignmentDefinition" type="string">
               <ipxact:name>moduleAssignmentDefinition</ipxact:name>
