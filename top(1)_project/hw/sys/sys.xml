@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2025.09.11.12:09:01"
+ date="2025.09.11.13:02:00"
  outputDirectory="/home/ubuntuaspiretank/p4p/P4P-Team44/top(1)_project/hw/sys/">
  <perimeter>
   <parameter
@@ -36,32 +36,32 @@
   <parameter
      name="AUTO_BOARD"
      type="String"
-     defaultValue="default"
+     defaultValue="Intel Arria 10 SX SoC Development Kits DK-SOC-10AS066S-D"
      onHdl="0"
      affectsHdl="1" />
   <parameter
-     name="AUTO_CLK_CLOCK_RATE"
+     name="AUTO_CLOCK_IN_IN_CLK_CLOCK_RATE"
      type="Long"
      defaultValue="-1"
      onHdl="0"
      affectsHdl="1" />
   <parameter
-     name="AUTO_CLK_CLOCK_DOMAIN"
+     name="AUTO_CLOCK_IN_IN_CLK_CLOCK_DOMAIN"
      type="Integer"
      defaultValue="-1"
      onHdl="0"
      affectsHdl="1" />
   <parameter
-     name="AUTO_CLK_RESET_DOMAIN"
+     name="AUTO_CLOCK_IN_IN_CLK_RESET_DOMAIN"
      type="Integer"
      defaultValue="-1"
      onHdl="0"
      affectsHdl="1" />
-  <interface name="clk" kind="clock" start="0">
+  <interface name="clock_in_in_clk" kind="clock" start="0">
    <property name="clockRate" value="0" />
    <property name="externallyDriven" value="false" />
    <property name="ptfSchematicName" value="" />
-   <port name="clk_clk" direction="input" role="clk" width="1" />
+   <port name="clock_in_in_clk_clk" direction="input" role="clk" width="1" />
   </interface>
   <interface name="reset" kind="reset" start="0">
    <property name="associatedClock" value="" />
@@ -70,13 +70,15 @@
   </interface>
  </perimeter>
  <entity kind="sys" version="1.0" name="sys">
-  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_IN_IN_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_IN_IN_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_IN_IN_CLK_RESET_DOMAIN" value="-1" />
   <parameter name="AUTO_GENERATION_ID" value="0" />
   <parameter name="AUTO_DEVICE" value="10AS066N3F40E2SG" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
-  <parameter name="AUTO_BOARD" value="default" />
-  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
-  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter
+     name="AUTO_BOARD"
+     value="Intel Arria 10 SX SoC Development Kits DK-SOC-10AS066S-D" />
   <parameter name="AUTO_UNIQUE_ID" value="" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
   <generatedFiles>
@@ -465,7 +467,9 @@
      value="&lt;address-map&gt;&lt;slave name=&apos;ram.s1&apos; start=&apos;0x0&apos; end=&apos;0x200000&apos; datawidth=&apos;32&apos; /&gt;&lt;slave name=&apos;cpu.dm_agent&apos; start=&apos;0x200000&apos; end=&apos;0x210000&apos; datawidth=&apos;32&apos; /&gt;&lt;/address-map&gt;" />
   <parameter name="hlsFile" value="" />
   <parameter name="AUTO_PLATFORM_IRQ_RX_INTERRUPTS_USED" value="1" />
-  <parameter name="AUTO_BOARD" value="default" />
+  <parameter
+     name="AUTO_BOARD"
+     value="Intel Arria 10 SX SoC Development Kits DK-SOC-10AS066S-D" />
   <parameter name="AUTO_DATA_MANAGER_ADDRESS_WIDTH" value="22" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
   <parameter
@@ -5234,7 +5238,7 @@
         &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
         &lt;parameterName&gt;N&lt;/parameterName&gt;
         &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
-        &lt;parameterValue&gt;25&lt;/parameterValue&gt;
+        &lt;parameterValue&gt;4&lt;/parameterValue&gt;
     &lt;/hdlParameterDescriptorDefinition&gt;
     &lt;hdlParameterDescriptorDefinition&gt;
         &lt;enabled&gt;true&lt;/enabled&gt;
@@ -7677,7 +7681,9 @@
    name="sys_altera_mm_interconnect_1920_wvxmrgi">
   <parameter name="AUTO_DEVICE" value="10AS066N3F40E2SG" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
-  <parameter name="AUTO_BOARD" value="default" />
+  <parameter
+     name="AUTO_BOARD"
+     value="Intel Arria 10 SX SoC Development Kits DK-SOC-10AS066S-D" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="" />
   <parameter
      name="COMPOSE_CONTENTS"

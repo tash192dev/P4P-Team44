@@ -21,7 +21,7 @@ https://fpgasoftware.intel.com/eula.-->
    tags=""
    categories="Systems"
    tool="QsysPro" />
- <parameter name="board" value="default" />
+ <parameter name="board">Intel Arria 10 SX SoC Development Kits DK-SOC-10AS066S-D</parameter>
  <parameter name="bonusData"><![CDATA[bonusData 
 {
    element clock_in
@@ -146,14 +146,31 @@ https://fpgasoftware.intel.com/eula.-->
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="systemInfos"><![CDATA[<systemInfosDefinition>
-    <connPtSystemInfos/>
+    <connPtSystemInfos>
+        <entry>
+            <key>clock_in_in_clk</key>
+            <value>
+                <connectionPointName>clock_in_in_clk</connectionPointName>
+                <suppliedSystemInfos>
+                    <entry>
+                        <key>CLOCK_RATE</key>
+                    </entry>
+                </suppliedSystemInfos>
+                <consumedSystemInfos/>
+            </value>
+        </entry>
+    </connPtSystemInfos>
 </systemInfosDefinition>]]></parameter>
  <parameter name="systemScripts" value="" />
  <parameter name="testBenchDutName" value="" />
  <parameter name="timeStamp" value="0" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
- <interface name="clk" internal="clock_in.in_clk" />
+ <interface
+   name="clock_in_in_clk"
+   internal="clock_in.in_clk"
+   type="clock"
+   dir="end" />
  <interface name="reset" internal="reset_in.in_reset" type="reset" dir="end" />
  <module
    name="clock_in"
@@ -164,6 +181,40 @@ https://fpgasoftware.intel.com/eula.-->
   <parameter name="componentDefinition"><![CDATA[<componentDefinition>
     <boundary>
         <interfaces>
+            <interface>
+                <name>in_clk</name>
+                <type>clock</type>
+                <isStart>false</isStart>
+                <ports>
+                    <port>
+                        <name>in_clk</name>
+                        <role>clk</role>
+                        <direction>Input</direction>
+                        <width>1</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                </ports>
+                <assignments>
+                    <assignmentValueMap/>
+                </assignments>
+                <parameters>
+                    <parameterValueMap>
+                        <entry>
+                            <key>clockRate</key>
+                            <value>0</value>
+                        </entry>
+                        <entry>
+                            <key>externallyDriven</key>
+                            <value>false</value>
+                        </entry>
+                        <entry>
+                            <key>ptfSchematicName</key>
+                        </entry>
+                    </parameterValueMap>
+                </parameters>
+            </interface>
             <interface>
                 <name>out_clk</name>
                 <type>clock</type>
@@ -5121,7 +5172,7 @@ https://fpgasoftware.intel.com/eula.-->
         <parameterHdlType>INTEGER</parameterHdlType>
         <parameterName>N</parameterName>
         <parameterType>java.lang.Integer</parameterType>
-        <parameterValue>25</parameterValue>
+        <parameterValue>4</parameterValue>
     </hdlParameterDescriptorDefinition>
     <hdlParameterDescriptorDefinition>
         <enabled>true</enabled>

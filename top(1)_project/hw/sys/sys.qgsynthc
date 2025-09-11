@@ -526,7 +526,7 @@
         <parameters>
           <parameter>
             <name>AUTO_BOARD</name>
-            <value>default</value>
+            <value>Intel Arria 10 SX SoC Development Kits DK-SOC-10AS066S-D</value>
           </parameter>
           <parameter>
             <name>AUTO_CLK_CLOCK_DOMAIN</name>
@@ -35411,7 +35411,7 @@
         &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
         &lt;parameterName&gt;N&lt;/parameterName&gt;
         &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
-        &lt;parameterValue&gt;25&lt;/parameterValue&gt;
+        &lt;parameterValue&gt;4&lt;/parameterValue&gt;
     &lt;/hdlParameterDescriptorDefinition&gt;
     &lt;hdlParameterDescriptorDefinition&gt;
         &lt;enabled&gt;true&lt;/enabled&gt;

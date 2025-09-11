@@ -1,6 +1,7 @@
 	component sys is
 		port (
-			reset_reset : in std_logic := 'X'  -- reset
+			clock_in_in_clk_clk : in std_logic := 'X'; -- clk
+			reset_reset         : in std_logic := 'X'  -- reset
 		);
 	end component sys;
 

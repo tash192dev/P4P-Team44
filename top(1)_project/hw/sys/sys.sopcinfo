@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="sys" kind="sys" version="1.0" fabric="QSYS">
  <!-- Format version 24.1 115 (Future versions may contain additional information.) -->
- <!-- 2025.09.11.12:09:01 -->
+ <!-- 2025.09.11.13:02:00 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
@@ -50,14 +50,14 @@
  </parameter>
  <parameter name="AUTO_BOARD">
   <type>java.lang.String</type>
-  <value>default</value>
+  <value>Intel Arria 10 SX SoC Development Kits DK-SOC-10AS066S-D</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
   <valid>true</valid>
   <sysinfo_type>BOARD</sysinfo_type>
  </parameter>
- <parameter name="AUTO_CLK_CLOCK_RATE">
+ <parameter name="AUTO_CLOCK_IN_IN_CLK_CLOCK_RATE">
   <type>java.lang.Long</type>
   <value>-1</value>
   <derived>false</derived>
@@ -65,9 +65,9 @@
   <visible>false</visible>
   <valid>true</valid>
   <sysinfo_type>CLOCK_RATE</sysinfo_type>
-  <sysinfo_arg>clk</sysinfo_arg>
+  <sysinfo_arg>clock_in_in_clk</sysinfo_arg>
  </parameter>
- <parameter name="AUTO_CLK_CLOCK_DOMAIN">
+ <parameter name="AUTO_CLOCK_IN_IN_CLK_CLOCK_DOMAIN">
   <type>java.lang.Integer</type>
   <value>-1</value>
   <derived>false</derived>
@@ -75,9 +75,9 @@
   <visible>false</visible>
   <valid>true</valid>
   <sysinfo_type>CLOCK_DOMAIN</sysinfo_type>
-  <sysinfo_arg>clk</sysinfo_arg>
+  <sysinfo_arg>clock_in_in_clk</sysinfo_arg>
  </parameter>
- <parameter name="AUTO_CLK_RESET_DOMAIN">
+ <parameter name="AUTO_CLOCK_IN_IN_CLK_RESET_DOMAIN">
   <type>java.lang.Integer</type>
   <value>-1</value>
   <derived>false</derived>
@@ -85,7 +85,7 @@
   <visible>false</visible>
   <valid>true</valid>
   <sysinfo_type>RESET_DOMAIN</sysinfo_type>
-  <sysinfo_arg>clk</sysinfo_arg>
+  <sysinfo_arg>clock_in_in_clk</sysinfo_arg>
  </parameter>
  <parameter name="deviceFamily">
   <type>java.lang.String</type>
@@ -4222,7 +4222,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="AUTO_BOARD">
    <type>java.lang.String</type>
-   <value>default</value>
+   <value>Intel Arria 10 SX SoC Development Kits DK-SOC-10AS066S-D</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -8670,7 +8670,7 @@ the requested settings for a module instance. -->
         <parameterHdlType>INTEGER</parameterHdlType>
         <parameterName>N</parameterName>
         <parameterType>java.lang.Integer</parameterType>
-        <parameterValue>25</parameterValue>
+        <parameterValue>4</parameterValue>
     </hdlParameterDescriptorDefinition>
     <hdlParameterDescriptorDefinition>
         <enabled>true</enabled>

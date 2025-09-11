@@ -19,8 +19,8 @@ use IEEE.numeric_std.all;
 
 entity sys is
 	port (
-		clk_clk     : in std_logic := '0'; --   clk.clk
-		reset_reset : in std_logic := '0'  -- reset.reset
+		clock_in_in_clk_clk : in std_logic := '0'; -- clock_in_in_clk.clk
+		reset_reset         : in std_logic := '0'  --           reset.reset
 	);
 end entity sys;
 
@@ -133,7 +133,7 @@ architecture rtl of sys is
 
 	component sys_nvmm_0_cmp is
 		generic (
-			N : integer := 25;
+			N : integer := 4;
 			K : integer := 5
 		);
 		port (
@@ -488,7 +488,7 @@ begin
 
 	clock_in : component sys_clock_in_cmp
 		port map (
-			in_clk  => clk_clk,              --  in_clk.clk
+			in_clk  => clock_in_in_clk_clk,  --  in_clk.clk
 			out_clk => clock_in_out_clk_clk  -- out_clk.clk
 		);
 

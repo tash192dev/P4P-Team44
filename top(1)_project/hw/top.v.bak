@@ -29,7 +29,7 @@ module top(input clk);
 
     assign sys_reset = po_reset | issp_reset;
 
-    sys u0(.clock_in_in_clk_clk(clk), .reset_reset(sys_reset));
+    sys u0(.clk_clk(clk), .reset_reset(sys_reset));
 
 endmodule
 
