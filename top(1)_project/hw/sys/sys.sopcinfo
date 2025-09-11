@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="sys" kind="sys" version="1.0" fabric="QSYS">
  <!-- Format version 24.1 115 (Future versions may contain additional information.) -->
- <!-- 2025.08.21.14:55:25 -->
+ <!-- 2025.09.11.12:09:01 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
@@ -1643,19 +1643,19 @@ the requested settings for a module instance. -->
                     <parameterValueMap>
                         <entry>
                             <key>opcode</key>
-                            <value>CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0</value>
+                            <value>CUSTOM0 CUSTOM0 CUSTOM0</value>
                         </entry>
                         <entry>
                             <key>funct7</key>
-                            <value>0000000 0010000 0100000 0110000 1000000</value>
+                            <value>0000000 0100000 0110000</value>
                         </entry>
                         <entry>
                             <key>funct3</key>
-                            <value>xxx xxx xxx xxx xxx</value>
+                            <value>xxx xxx xxx</value>
                         </entry>
                         <entry>
                             <key>mnemonic</key>
-                            <value>CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}</value>
+                            <value>CONV_IN KERNEL_SET BIAS_SET</value>
                         </entry>
                     </parameterValueMap>
                 </parameters>
@@ -3372,19 +3372,19 @@ the requested settings for a module instance. -->
                 <parameterValueMap>
                     <entry>
                         <key>opcode</key>
-                        <value>CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0</value>
+                        <value>CUSTOM0 CUSTOM0 CUSTOM0</value>
                     </entry>
                     <entry>
                         <key>funct7</key>
-                        <value>0000000 0010000 0100000 0110000 1000000</value>
+                        <value>0000000 0100000 0110000</value>
                     </entry>
                     <entry>
                         <key>funct3</key>
-                        <value>xxx xxx xxx xxx xxx</value>
+                        <value>xxx xxx xxx</value>
                     </entry>
                     <entry>
                         <key>mnemonic</key>
-                        <value>CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}</value>
+                        <value>CONV_IN KERNEL_SET BIAS_SET</value>
                     </entry>
                 </parameterValueMap>
             </parameters>
@@ -5219,7 +5219,7 @@ particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="opcode">
     <type>java.lang.String</type>
-    <value>CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0</value>
+    <value>CUSTOM0 CUSTOM0 CUSTOM0</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -5227,7 +5227,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="funct7">
     <type>java.lang.String</type>
-    <value>0000000 0010000 0100000 0110000 1000000</value>
+    <value>0000000 0100000 0110000</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -5235,7 +5235,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="funct3">
     <type>java.lang.String</type>
-    <value>xxx xxx xxx xxx xxx</value>
+    <value>xxx xxx xxx</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -5243,7 +5243,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="mnemonic">
     <type>java.lang.String</type>
-    <value>CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}</value>
+    <value>CONV_IN KERNEL_SET BIAS_SET</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -8705,6 +8705,476 @@ the requested settings for a module instance. -->
   <parameter name="liveModuleName">
    <type>java.lang.String</type>
    <value>nvmm_0</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="AUTO_DEVICE_FAMILY">
+   <type>java.lang.String</type>
+   <value>ARRIA10</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+   <sysinfo_type>DEVICE_FAMILY</sysinfo_type>
+  </parameter>
+  <parameter name="AUTO_DEVICE">
+   <type>java.lang.String</type>
+   <value>10AS066N3F40E2SG</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+   <sysinfo_type>DEVICE</sysinfo_type>
+  </parameter>
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>Arria 10</value>
+   <derived>true</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+   <sysinfo_type>DEVICE_FAMILY</sysinfo_type>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <interface
+     name="NVMM"
+     kind="niosv_custom_instruction_subordinate"
+     version="24.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>niosv_custom_instruction</type>
+   <span>0</span>
+   <isStart>false</isStart>
+   <port>
+    <name>NVMM_alu_result</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>alu_result</role>
+   </port>
+   <port>
+    <name>NVMM_clk</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+   <port>
+    <name>NVMM_ctrl</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>ctrl</role>
+   </port>
+   <port>
+    <name>NVMM_data0</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>data0</role>
+   </port>
+   <port>
+    <name>NVMM_data1</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>data1</role>
+   </port>
+   <port>
+    <name>NVMM_done</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>done</role>
+   </port>
+   <port>
+    <name>NVMM_enable</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>enable</role>
+   </port>
+   <port>
+    <name>NVMM_reset</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+   <port>
+    <name>NVMM_result</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>result</role>
+   </port>
+  </interface>
+ </module>
+ <module
+   name="nvmm_1"
+   kind="nvmm"
+   version="1.0"
+   entity="sys_nvmm_1"
+   library="sys_nvmm_1"
+   path="nvmm_1"
+   hpath="nvmm_1"
+   className="altera_generic_component">
+  <!-- Describes a single module. Module parameters are
+the requested settings for a module instance. -->
+  <parameter name="componentDefinition">
+   <type>com.altera.qsys.blackboxmodule.definitions.ComponentDefinition</type>
+   <value><![CDATA[<componentDefinition>
+    <boundary>
+        <interfaces>
+            <interface>
+                <name>NVMM</name>
+                <type>niosv_custom_instruction</type>
+                <isStart>false</isStart>
+                <ports>
+                    <port>
+                        <name>NVMM_alu_result</name>
+                        <role>alu_result</role>
+                        <direction>Input</direction>
+                        <width>32</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_clk</name>
+                        <role>clk</role>
+                        <direction>Input</direction>
+                        <width>1</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_ctrl</name>
+                        <role>ctrl</role>
+                        <direction>Input</direction>
+                        <width>32</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_data0</name>
+                        <role>data0</role>
+                        <direction>Input</direction>
+                        <width>32</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_data1</name>
+                        <role>data1</role>
+                        <direction>Input</direction>
+                        <width>32</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_done</name>
+                        <role>done</role>
+                        <direction>Output</direction>
+                        <width>1</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_enable</name>
+                        <role>enable</role>
+                        <direction>Input</direction>
+                        <width>1</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_reset</name>
+                        <role>reset</role>
+                        <direction>Input</direction>
+                        <width>1</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                    <port>
+                        <name>NVMM_result</name>
+                        <role>result</role>
+                        <direction>Output</direction>
+                        <width>32</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                        <terminationValue>0</terminationValue>
+                    </port>
+                </ports>
+                <assignments>
+                    <assignmentValueMap/>
+                </assignments>
+            </interface>
+        </interfaces>
+    </boundary>
+    <originalModuleInfo>
+        <className>nvmm</className>
+        <version>1.0</version>
+        <displayName>nvmm</displayName>
+    </originalModuleInfo>
+    <systemInfoParameterDescriptors>
+        <descriptors/>
+    </systemInfoParameterDescriptors>
+    <systemInfos>
+        <connPtSystemInfos/>
+    </systemInfos>
+</componentDefinition>]]></value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generationInfoDefinition">
+   <type>com.altera.qsys.blackboxmodule.definitions.GenerationInfoDefinition</type>
+   <value><![CDATA[<generationInfoDefinition>
+    <hdlLibraryName>sys_nvmm_1</hdlLibraryName>
+    <fileSets>
+        <fileSet>
+            <fileSetName>sys_nvmm_1</fileSetName>
+            <fileSetFixedName>sys_nvmm_1</fileSetFixedName>
+            <fileSetKind>QUARTUS_SYNTH</fileSetKind>
+            <fileSetFiles/>
+        </fileSet>
+        <fileSet>
+            <fileSetName>sys_nvmm_1</fileSetName>
+            <fileSetFixedName>sys_nvmm_1</fileSetFixedName>
+            <fileSetKind>SIM_VERILOG</fileSetKind>
+            <fileSetFiles/>
+        </fileSet>
+        <fileSet>
+            <fileSetName>sys_nvmm_1</fileSetName>
+            <fileSetFixedName>sys_nvmm_1</fileSetFixedName>
+            <fileSetKind>SIM_VHDL</fileSetKind>
+            <fileSetFiles/>
+        </fileSet>
+        <fileSet>
+            <fileSetName>sys_nvmm_1</fileSetName>
+            <fileSetFixedName>sys_nvmm_1</fileSetFixedName>
+            <fileSetKind>CDC</fileSetKind>
+            <fileSetFiles/>
+        </fileSet>
+        <fileSet>
+            <fileSetName>sys_nvmm_1</fileSetName>
+            <fileSetFixedName>sys_nvmm_1</fileSetFixedName>
+            <fileSetKind>CDC_VHDL</fileSetKind>
+            <fileSetFiles/>
+        </fileSet>
+    </fileSets>
+</generationInfoDefinition>]]></value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="hlsFile">
+   <type>java.lang.String</type>
+   <value></value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="logicalView">
+   <type>java.lang.String</type>
+   <value>ip/sys/sys_nvmm_1.ip</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="defaultBoundary">
+   <type>com.altera.sopcmodel.definition.BoundaryDefinition</type>
+   <value><![CDATA[<boundaryDefinition>
+    <interfaces>
+        <interface>
+            <name>NVMM</name>
+            <type>niosv_custom_instruction</type>
+            <isStart>false</isStart>
+            <ports>
+                <port>
+                    <name>NVMM_alu_result</name>
+                    <role>alu_result</role>
+                    <direction>Input</direction>
+                    <width>32</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_clk</name>
+                    <role>clk</role>
+                    <direction>Input</direction>
+                    <width>1</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_ctrl</name>
+                    <role>ctrl</role>
+                    <direction>Input</direction>
+                    <width>32</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_data0</name>
+                    <role>data0</role>
+                    <direction>Input</direction>
+                    <width>32</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_data1</name>
+                    <role>data1</role>
+                    <direction>Input</direction>
+                    <width>32</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_done</name>
+                    <role>done</role>
+                    <direction>Output</direction>
+                    <width>1</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_enable</name>
+                    <role>enable</role>
+                    <direction>Input</direction>
+                    <width>1</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_reset</name>
+                    <role>reset</role>
+                    <direction>Input</direction>
+                    <width>1</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+                <port>
+                    <name>NVMM_result</name>
+                    <role>result</role>
+                    <direction>Output</direction>
+                    <width>32</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC_VECTOR</vhdlType>
+                    <terminationValue>0</terminationValue>
+                </port>
+            </ports>
+            <assignments>
+                <assignmentValueMap/>
+            </assignments>
+        </interface>
+    </interfaces>
+</boundaryDefinition>]]></value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="moduleAssignmentDefinition">
+   <type>com.altera.sopcmodel.definition.AssignmentDefinition</type>
+   <value><![CDATA[<assignmentDefinition>
+    <assignmentValueMap/>
+</assignmentDefinition>]]></value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="svInterfaceDefinition">
+   <type>com.altera.qsys.blackboxmodule.definitions.ModuleSvInterfaceDefinition</type>
+   <value></value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="hdlParameters">
+   <type>com.altera.qsys.blackboxmodule.definitions.HdlParameterDescriptorDefinitionList</type>
+   <value><![CDATA[<hdlParameterDescriptorDefinitionList>
+    <hdlParameterDescriptorDefinition>
+        <enabled>true</enabled>
+        <exported>false</exported>
+        <parameterHdlType>INTEGER</parameterHdlType>
+        <parameterName>N</parameterName>
+        <parameterType>java.lang.Integer</parameterType>
+        <parameterValue>25</parameterValue>
+    </hdlParameterDescriptorDefinition>
+    <hdlParameterDescriptorDefinition>
+        <enabled>true</enabled>
+        <exported>false</exported>
+        <parameterHdlType>INTEGER</parameterHdlType>
+        <parameterName>K</parameterName>
+        <parameterType>java.lang.Integer</parameterType>
+        <parameterValue>5</parameterValue>
+    </hdlParameterDescriptorDefinition>
+</hdlParameterDescriptorDefinitionList>]]></value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="cpuInfo">
+   <type>com.altera.sopcmodel.ensemble.cpuinfo.serializable.CpuInfoDefinition</type>
+   <value></value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="bspCpu">
+   <type>java.lang.Boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="liveModuleName">
+   <type>java.lang.String</type>
+   <value>nvmm_1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -14649,7 +15119,7 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>reset1</endConnectionPoint>
  </connection>
  <plugin>
-  <instanceCount>7</instanceCount>
+  <instanceCount>8</instanceCount>
   <name>altera_generic_component</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype></subtype>
@@ -14721,7 +15191,7 @@ parameters are a RESULT of the module parameters. -->
   <version>24.1</version>
  </plugin>
  <plugin>
-  <instanceCount>1</instanceCount>
+  <instanceCount>2</instanceCount>
   <name>niosv_custom_instruction_subordinate</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>

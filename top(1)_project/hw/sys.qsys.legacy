@@ -146,27 +146,14 @@ https://fpgasoftware.intel.com/eula.-->
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="systemInfos"><![CDATA[<systemInfosDefinition>
-    <connPtSystemInfos>
-        <entry>
-            <key>clk</key>
-            <value>
-                <connectionPointName>clk</connectionPointName>
-                <suppliedSystemInfos>
-                    <entry>
-                        <key>CLOCK_RATE</key>
-                    </entry>
-                </suppliedSystemInfos>
-                <consumedSystemInfos/>
-            </value>
-        </entry>
-    </connPtSystemInfos>
+    <connPtSystemInfos/>
 </systemInfosDefinition>]]></parameter>
  <parameter name="systemScripts" value="" />
  <parameter name="testBenchDutName" value="" />
  <parameter name="timeStamp" value="0" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
- <interface name="clk" internal="clock_in.in_clk" type="clock" dir="end" />
+ <interface name="clk" internal="clock_in.in_clk" />
  <interface name="reset" internal="reset_in.in_reset" type="reset" dir="end" />
  <module
    name="clock_in"
@@ -177,40 +164,6 @@ https://fpgasoftware.intel.com/eula.-->
   <parameter name="componentDefinition"><![CDATA[<componentDefinition>
     <boundary>
         <interfaces>
-            <interface>
-                <name>in_clk</name>
-                <type>clock</type>
-                <isStart>false</isStart>
-                <ports>
-                    <port>
-                        <name>in_clk</name>
-                        <role>clk</role>
-                        <direction>Input</direction>
-                        <width>1</width>
-                        <lowerBound>0</lowerBound>
-                        <vhdlType>STD_LOGIC</vhdlType>
-                        <terminationValue>0</terminationValue>
-                    </port>
-                </ports>
-                <assignments>
-                    <assignmentValueMap/>
-                </assignments>
-                <parameters>
-                    <parameterValueMap>
-                        <entry>
-                            <key>clockRate</key>
-                            <value>0</value>
-                        </entry>
-                        <entry>
-                            <key>externallyDriven</key>
-                            <value>false</value>
-                        </entry>
-                        <entry>
-                            <key>ptfSchematicName</key>
-                        </entry>
-                    </parameterValueMap>
-                </parameters>
-            </interface>
             <interface>
                 <name>out_clk</name>
                 <type>clock</type>
@@ -1256,19 +1209,19 @@ https://fpgasoftware.intel.com/eula.-->
                     <parameterValueMap>
                         <entry>
                             <key>opcode</key>
-                            <value>CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0</value>
+                            <value>CUSTOM0 CUSTOM0 CUSTOM0</value>
                         </entry>
                         <entry>
                             <key>funct7</key>
-                            <value>0000000 0010000 0100000 0110000 1000000</value>
+                            <value>0000000 0100000 0110000</value>
                         </entry>
                         <entry>
                             <key>funct3</key>
-                            <value>xxx xxx xxx xxx xxx</value>
+                            <value>xxx xxx xxx</value>
                         </entry>
                         <entry>
                             <key>mnemonic</key>
-                            <value>CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}</value>
+                            <value>CONV_IN KERNEL_SET BIAS_SET</value>
                         </entry>
                     </parameterValueMap>
                 </parameters>
@@ -2921,19 +2874,19 @@ https://fpgasoftware.intel.com/eula.-->
                 <parameterValueMap>
                     <entry>
                         <key>opcode</key>
-                        <value>CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0</value>
+                        <value>CUSTOM0 CUSTOM0 CUSTOM0</value>
                     </entry>
                     <entry>
                         <key>funct7</key>
-                        <value>0000000 0010000 0100000 0110000 1000000</value>
+                        <value>0000000 0100000 0110000</value>
                     </entry>
                     <entry>
                         <key>funct3</key>
-                        <value>xxx xxx xxx xxx xxx</value>
+                        <value>xxx xxx xxx</value>
                     </entry>
                     <entry>
                         <key>mnemonic</key>
-                        <value>CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}</value>
+                        <value>CONV_IN KERNEL_SET BIAS_SET</value>
                     </entry>
                 </parameterValueMap>
             </parameters>

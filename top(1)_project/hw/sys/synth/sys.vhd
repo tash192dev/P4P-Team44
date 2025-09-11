@@ -7,6 +7,7 @@ library sys_clock_in;
 library cpu;
 library jtag_uart;
 library sys_nvmm_0;
+library sys_nvmm_1;
 library sys_intel_onchip_memory_0;
 library sys_reset_in;
 library sys_sysid_qsys_0;
@@ -147,6 +148,24 @@ architecture rtl of sys is
 			NVMM_result     : out std_logic_vector(31 downto 0)                     -- result
 		);
 	end component sys_nvmm_0_cmp;
+
+	component sys_nvmm_1_cmp is
+		generic (
+			N : integer := 25;
+			K : integer := 5
+		);
+		port (
+			NVMM_alu_result : in  std_logic_vector(31 downto 0) := (others => 'X'); -- alu_result
+			NVMM_clk        : in  std_logic                     := 'X';             -- clk
+			NVMM_ctrl       : in  std_logic_vector(31 downto 0) := (others => 'X'); -- ctrl
+			NVMM_data0      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- data0
+			NVMM_data1      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- data1
+			NVMM_done       : out std_logic;                                        -- done
+			NVMM_enable     : in  std_logic                     := 'X';             -- enable
+			NVMM_reset      : in  std_logic                     := 'X';             -- reset
+			NVMM_result     : out std_logic_vector(31 downto 0)                     -- result
+		);
+	end component sys_nvmm_1_cmp;
 
 	component sys_intel_onchip_memory_0_cmp is
 		port (
@@ -451,6 +470,8 @@ architecture rtl of sys is
 		use entity jtag_uart.jtag_uart;
 	for nvmm : sys_nvmm_0_cmp
 		use entity sys_nvmm_0.sys_nvmm_0;
+	for nvmm_1 : sys_nvmm_1_cmp
+		use entity sys_nvmm_1.sys_nvmm_1;
 	for ram : sys_intel_onchip_memory_0_cmp
 		use entity sys_intel_onchip_memory_0.sys_intel_onchip_memory_0;
 	for reset_in : sys_reset_in_cmp
@@ -579,6 +600,19 @@ begin
 			NVMM_enable     => cpu_ci_custom0_enable,     --     .enable
 			NVMM_reset      => cpu_ci_custom0_reset,      --     .reset
 			NVMM_result     => cpu_ci_custom0_result      --     .result
+		);
+
+	nvmm_1 : component sys_nvmm_1_cmp
+		port map (
+			NVMM_alu_result => open, -- NVMM.alu_result
+			NVMM_clk        => open, --     .clk
+			NVMM_ctrl       => open, --     .ctrl
+			NVMM_data0      => open, --     .data0
+			NVMM_data1      => open, --     .data1
+			NVMM_done       => open, --     .done
+			NVMM_enable     => open, --     .enable
+			NVMM_reset      => open, --     .reset
+			NVMM_result     => open  --     .result
 		);
 
 	ram : component sys_intel_onchip_memory_0_cmp

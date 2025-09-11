@@ -7,6 +7,7 @@ Progress: Parameterizing module clock_in
 Progress: Parameterizing module cpu
 Progress: Parameterizing module jtag_uart
 Progress: Parameterizing module nvmm
+Progress: Parameterizing module nvmm_1
 Progress: Parameterizing module ram
 Progress: Parameterizing module reset_in
 Progress: Parameterizing module sysid_qsys_0
@@ -24,6 +25,7 @@ Progress: Parameterizing module clock_in
 Progress: Parameterizing module cpu
 Progress: Parameterizing module jtag_uart
 Progress: Parameterizing module nvmm
+Progress: Parameterizing module nvmm_1
 Progress: Parameterizing module ram
 Progress: Parameterizing module reset_in
 Progress: Parameterizing module sysid_qsys_0
@@ -39,6 +41,7 @@ Info: sys: "Generating: sys_clock_in"
 Info: sys: "Generating: cpu"
 Info: sys: "Generating: jtag_uart"
 Info: sys: "Generating: sys_nvmm_0"
+Info: sys: "Generating: sys_nvmm_1"
 Info: sys: "Generating: sys_intel_onchip_memory_0"
 Info: sys: "Generating: sys_reset_in"
 Info: sys: "Generating: sys_sysid_qsys_0"
@@ -69,5 +72,5 @@ Info: sys: "Generating: sys_altera_merlin_multiplexer_1922_hobyaqy"
 Info: sys: "Generating: sys_altera_merlin_traffic_limiter_altera_avalon_sc_fifo_1921_xbo52nq"
 Info: sys: "Generating: sys_altera_merlin_burst_adapter_altera_avalon_st_pipeline_stage_1932_2vkiicy"
 Info: sys: "Generating: sys_altera_avalon_st_pipeline_stage_1930_bv2ucky"
-Info: sys: Done "sys" with 33 modules, 44 files
+Info: sys: Done "sys" with 34 modules, 44 files
 Info: Finished: Create HDL design files for synthesis

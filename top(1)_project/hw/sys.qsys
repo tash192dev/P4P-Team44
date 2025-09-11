@@ -226,20 +226,7 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:name>systemInfos</ipxact:name>
           <ipxact:displayName>systemInfos</ipxact:displayName>
           <ipxact:value>&lt;systemInfosDefinition&gt;
-    &lt;connPtSystemInfos&gt;
-        &lt;entry&gt;
-            &lt;key&gt;clk&lt;/key&gt;
-            &lt;value&gt;
-                &lt;connectionPointName&gt;clk&lt;/connectionPointName&gt;
-                &lt;suppliedSystemInfos&gt;
-                    &lt;entry&gt;
-                        &lt;key&gt;CLOCK_RATE&lt;/key&gt;
-                    &lt;/entry&gt;
-                &lt;/suppliedSystemInfos&gt;
-                &lt;consumedSystemInfos/&gt;
-            &lt;/value&gt;
-        &lt;/entry&gt;
-    &lt;/connPtSystemInfos&gt;
+    &lt;connPtSystemInfos/&gt;
 &lt;/systemInfosDefinition&gt;</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="systemScripts" type="string">
@@ -287,40 +274,6 @@ https://fpgasoftware.intel.com/eula.-->
               <ipxact:value>&lt;componentDefinition&gt;
     &lt;boundary&gt;
         &lt;interfaces&gt;
-            &lt;interface&gt;
-                &lt;name&gt;in_clk&lt;/name&gt;
-                &lt;type&gt;clock&lt;/type&gt;
-                &lt;isStart&gt;false&lt;/isStart&gt;
-                &lt;ports&gt;
-                    &lt;port&gt;
-                        &lt;name&gt;in_clk&lt;/name&gt;
-                        &lt;role&gt;clk&lt;/role&gt;
-                        &lt;direction&gt;Input&lt;/direction&gt;
-                        &lt;width&gt;1&lt;/width&gt;
-                        &lt;lowerBound&gt;0&lt;/lowerBound&gt;
-                        &lt;vhdlType&gt;STD_LOGIC&lt;/vhdlType&gt;
-                        &lt;terminationValue&gt;0&lt;/terminationValue&gt;
-                    &lt;/port&gt;
-                &lt;/ports&gt;
-                &lt;assignments&gt;
-                    &lt;assignmentValueMap/&gt;
-                &lt;/assignments&gt;
-                &lt;parameters&gt;
-                    &lt;parameterValueMap&gt;
-                        &lt;entry&gt;
-                            &lt;key&gt;clockRate&lt;/key&gt;
-                            &lt;value&gt;0&lt;/value&gt;
-                        &lt;/entry&gt;
-                        &lt;entry&gt;
-                            &lt;key&gt;externallyDriven&lt;/key&gt;
-                            &lt;value&gt;false&lt;/value&gt;
-                        &lt;/entry&gt;
-                        &lt;entry&gt;
-                            &lt;key&gt;ptfSchematicName&lt;/key&gt;
-                        &lt;/entry&gt;
-                    &lt;/parameterValueMap&gt;
-                &lt;/parameters&gt;
-            &lt;/interface&gt;
             &lt;interface&gt;
                 &lt;name&gt;out_clk&lt;/name&gt;
                 &lt;type&gt;clock&lt;/type&gt;
@@ -1420,19 +1373,19 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;parameterValueMap&gt;
                         &lt;entry&gt;
                             &lt;key&gt;opcode&lt;/key&gt;
-                            &lt;value&gt;CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0&lt;/value&gt;
+                            &lt;value&gt;CUSTOM0 CUSTOM0 CUSTOM0&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;funct7&lt;/key&gt;
-                            &lt;value&gt;0000000 0010000 0100000 0110000 1000000&lt;/value&gt;
+                            &lt;value&gt;0000000 0100000 0110000&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;funct3&lt;/key&gt;
-                            &lt;value&gt;xxx xxx xxx xxx xxx&lt;/value&gt;
+                            &lt;value&gt;xxx xxx xxx&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;mnemonic&lt;/key&gt;
-                            &lt;value&gt;CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}&lt;/value&gt;
+                            &lt;value&gt;CONV_IN KERNEL_SET BIAS_SET&lt;/value&gt;
                         &lt;/entry&gt;
                     &lt;/parameterValueMap&gt;
                 &lt;/parameters&gt;
@@ -3093,19 +3046,19 @@ https://fpgasoftware.intel.com/eula.-->
                 &lt;parameterValueMap&gt;
                     &lt;entry&gt;
                         &lt;key&gt;opcode&lt;/key&gt;
-                        &lt;value&gt;CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0 CUSTOM0&lt;/value&gt;
+                        &lt;value&gt;CUSTOM0 CUSTOM0 CUSTOM0&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;funct7&lt;/key&gt;
-                        &lt;value&gt;0000000 0010000 0100000 0110000 1000000&lt;/value&gt;
+                        &lt;value&gt;0000000 0100000 0110000&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;funct3&lt;/key&gt;
-                        &lt;value&gt;xxx xxx xxx xxx xxx&lt;/value&gt;
+                        &lt;value&gt;xxx xxx xxx&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;mnemonic&lt;/key&gt;
-                        &lt;value&gt;CONV_IN CONV_OUT KERNEL_SET BIAS_SET {}&lt;/value&gt;
+                        &lt;value&gt;CONV_IN KERNEL_SET BIAS_SET&lt;/value&gt;
                     &lt;/entry&gt;
                 &lt;/parameterValueMap&gt;
             &lt;/parameters&gt;
@@ -8170,7 +8123,7 @@ https://fpgasoftware.intel.com/eula.-->
     <altera:hdl_parameter_mappings></altera:hdl_parameter_mappings>
     <altera:preserved_ports_for_debug></altera:preserved_ports_for_debug>
     <altera:altera_interface_boundary>
-      <altera:interface_mapping altera:name="clk" altera:internal="clock_in.in_clk" altera:type="clock" altera:dir="end"></altera:interface_mapping>
+      <altera:interface_mapping altera:name="clk" altera:internal="clock_in.in_clk"></altera:interface_mapping>
       <altera:interface_mapping altera:name="reset" altera:internal="reset_in.in_reset" altera:type="reset" altera:dir="end"></altera:interface_mapping>
     </altera:altera_interface_boundary>
     <ipxact:components>
@@ -8278,6 +8231,6 @@ https://fpgasoftware.intel.com/eula.-->
       </ipxact:component>
     </ipxact:components>
     <altera:altera_has_warnings>false</altera:altera_has_warnings>
-    <altera:altera_has_errors>false</altera:altera_has_errors>
+    <altera:altera_has_errors>true</altera:altera_has_errors>
   </ipxact:vendorExtensions>
 </ipxact:design>
