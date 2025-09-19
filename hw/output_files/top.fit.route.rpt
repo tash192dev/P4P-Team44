@@ -1,0 +1,248 @@
+Fitter Route Stage Report for top
+Mon Mar 11 04:28:49 2024
+Quartus Prime Version 24.1.0 Internal Build 106 03/10/2024 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Nets with Highest Wire Count
+  3. Delay Chain Summary
+  4. Routing Usage Summary
+  5. Route Messages
+  6. Estimated Delay Added for Hold Timing Summary
+  7. Estimated Delay Added for Hold Timing Details
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Nets with Highest Wire Count                                                                                                                      ;
++-------------------------------------------------------------------------------------------------------------------+----------------------+--------+
+; Net                                                                                                               ; Number of Wires Used ; Fanout ;
++-------------------------------------------------------------------------------------------------------------------+----------------------+--------+
+; u0|rst_controller|r_sync_rst                                                                                      ; 190                  ; 243    ;
+; u0|rst_controller|r_early_rst                                                                                     ; 150                  ; 130    ;
+; u0|mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|int_nxt_addr_reg_dly[10] ; 141                  ; 130    ;
+; u0|mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|int_nxt_addr_reg_dly[14] ; 137                  ; 130    ;
+; u0|mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|int_nxt_addr_reg_dly[12] ; 136                  ; 130    ;
+; u0|mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|int_nxt_addr_reg_dly[4]  ; 132                  ; 130    ;
+; u0|mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|int_nxt_addr_reg_dly[7]  ; 129                  ; 130    ;
+; u0|mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|int_nxt_addr_reg_dly[2]  ; 129                  ; 130    ;
+; u0|mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|int_nxt_addr_reg_dly[8]  ; 128                  ; 130    ;
+; u0|mm_interconnect_0|ram_s1_agent|m0_read~1                                                                       ; 125                  ; 131    ;
++-------------------------------------------------------------------------------------------------------------------+----------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                                                   ;
++------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; Name ; Pin Type ; Input Delay Chain 0 ; Output Delay Chain ; OE Delay Chain ; IO_12_LANE Input Data Delay Chain ; IO_12_LANE Input Strobe Delay Chain ;
++------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; clk  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
++------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+
+
++-------------------------------------------------------------+
+; Routing Usage Summary                                       ;
++------------------------------+------------------------------+
+; Routing Resource Type        ; Usage                        ;
++------------------------------+------------------------------+
+; Block interconnects          ; 17,583 / 2,248,138 ( < 1 % ) ;
+; C27 interconnects            ; 8 / 35,203 ( < 1 % )         ;
+; C4 interconnects             ; 10,126 / 1,597,544 ( < 1 % ) ;
+; Direct links                 ; 2,998 / 2,248,138 ( < 1 % )  ;
+; Global clocks                ; 1 / 32 ( 3 % )               ;
+; Periphery clocks             ; 0 / 739 ( 0 % )              ;
+; R3 interconnects             ; 4,663 / 758,112 ( < 1 % )    ;
+; R32 interconnects            ; 0 / 66,605 ( 0 % )           ;
+; R32/C27 interconnect drivers ; 8 / 239,816 ( < 1 % )        ;
+; R6 interconnects             ; 7,938 / 1,488,576 ( < 1 % )  ;
+; Regional clock lefts         ; 0 / 16 ( 0 % )               ;
+; Regional clock out bottoms   ; 0 / 16 ( 0 % )               ;
+; Regional clock out tops      ; 0 / 16 ( 0 % )               ;
+; Regional clock rights        ; 0 / 16 ( 0 % )               ;
+; Regional clocks              ; 0 / 16 ( 0 % )               ;
+; Spine buffers                ; 2 / 660 ( < 1 % )            ;
+; Spine clocks                 ; 3 / 990 ( < 1 % )            ;
+; Spine feedthroughs           ; 0 / 736 ( 0 % )              ;
++------------------------------+------------------------------+
+
+
++----------------+
+; Route Messages ;
++----------------+
+Info (20032): Parallel compilation is enabled and will use up to 2 processors
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 24.1.0 Internal Build 106 03/10/2024 SC Pro Edition
+    Info: Copyright (C) 2024  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the Intel FPGA Software License Subscription Agreements 
+    Info: on the Quartus Prime software download page.
+    Info: Processing started: Mon Mar 11 04:22:14 2024
+    Info: System process ID: 5700
+Info: Command: quartus_fit top.qpf
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = top
+Info: Revision = top
+Info (22300): Design uses Placement Effort Multiplier = 1.0.
+Info (170193): Fitter routing operations beginning
+Info: Following instance found in the design -  u0|rst_controller|*
+Info: Following instance found in the design -  
+Info: Following instance found in the design -  u0|rst_controller|*
+Info (11888): Total time spent on timing analysis during Routing is 13.49 seconds.
+Info (16607): Fitter routing operations ending: elapsed time is 00:02:19
+
+
++----------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                  ;
++---------------------+----------------------+-------------------+
+; Source Clock(s)     ; Destination Clock(s) ; Delay Added in ns ;
++---------------------+----------------------+-------------------+
+; clk                 ; clk                  ; 1055.4            ;
+; altera_reserved_tck ; altera_reserved_tck  ; 837.4             ;
++---------------------+----------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                                                                                                                     ;
++----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------+
+; Source Register                                                                                                      ; Destination Register                                                                                                   ; Delay Added in ns ;
++----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------+
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[22]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[22]                                                             ; 1.258             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[28]                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[30]                                                             ; 1.233             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[20]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[20]                                                             ; 1.225             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_address[8]                                                            ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[42]                                    ; 1.219             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dtmcs[26]                                                         ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dtmcs[25]                                                           ; 1.190             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[26]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[26]                                                             ; 1.186             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[24]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[24]                                                             ; 1.182             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[30]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[30]                                                             ; 1.142             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[16]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[16]                                                             ; 1.139             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[32]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[32]                                                             ; 1.139             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[29]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[29]                                                             ; 1.133             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[31]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[31]                                                             ; 1.126             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[10]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[10]                                                             ; 1.124             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[27]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[27]                                                             ; 1.121             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[28]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[28]                                                             ; 1.120             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[33]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[33]                                                             ; 1.120             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[12]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[12]                                                             ; 1.120             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[9]                                                            ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[9]                                                              ; 1.106             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dtmcs[18]                                                         ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dtmcs[17]                                                           ; 1.103             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_toggle_flopped                             ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_toggle_flopped_n                             ; 1.102             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|in_to_out_synchronizer|din_s1                       ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|in_to_out_synchronizer|dreg[0]                        ; 1.099             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[18]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[18]                                                             ; 1.099             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[3]                                                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[5]                                     ; 1.091             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|hub_info_reg|WORD_SR[2]              ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|hub_info_reg|WORD_SR[1]                ; 1.084             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[15]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[15]                                                             ; 1.082             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_address[3]                                                            ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[37]                                    ; 1.077             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[13]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[13]                                                             ; 1.077             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[24]                                 ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[24]                                ; 1.075             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[19]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[19]                                                             ; 1.075             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[21]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[21]                                                             ; 1.073             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[17]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[17]                                                             ; 1.073             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[9]                                  ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[9]                                 ; 1.055             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[4]                                                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[6]                                     ; 1.053             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|shadow_jsm|state[10]                 ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|shadow_jsm|state[12]                   ; 1.044             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[30]                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[32]                                                             ; 1.035             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_address[0]                                                            ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[34]                                    ; 1.033             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[21]                                                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[23]                                    ; 1.024             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[4]                                  ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[4]                                 ; 1.023             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[5]                                                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[7]                                     ; 1.021             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[3]                                  ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[3]                                 ; 1.020             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_address[6]                                                            ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[40]                                    ; 1.019             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_address[4]                                                            ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[38]                                    ; 1.019             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[2]                                  ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[2]                                 ; 1.012             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[22]                                                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[24]                                    ; 1.010             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[0]                                                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[2]                                     ; 1.010             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_address[1]                                                            ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[35]                                    ; 1.009             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[9]                                                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[11]                                    ; 1.008             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_address[2]                                                            ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[36]                                    ; 1.005             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[5]                                  ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[5]                                 ; 1.002             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[31]                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[33]                                                             ; 0.998             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[0]                                  ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[0]                                 ; 0.998             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[7]                                  ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[7]                                 ; 0.988             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_address[7]                                                            ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[41]                                    ; 0.981             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[26]                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[28]                                                             ; 0.979             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[1]                                  ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[1]                                 ; 0.975             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[20]                                 ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[20]                                ; 0.973             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[6]                                  ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[6]                                 ; 0.973             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|hub_info_reg|WORD_SR[3]              ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|hub_info_reg|WORD_SR[2]                ; 0.972             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[12]                                 ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[12]                                ; 0.969             ;
+; issp_inst|altsource_probe_body_inst|wider_source_gen.wider_source_inst|no_instance_id_gen.rom_info_inst|WORD_SR[3]   ; issp_inst|altsource_probe_body_inst|wider_source_gen.wider_source_inst|no_instance_id_gen.rom_info_inst|WORD_SR[2]     ; 0.966             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|shadow_irf_reg[2][4]                 ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|irf_reg[2][4]                          ; 0.963             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[38]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[38]                                                             ; 0.963             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[31]                                                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[33]                                    ; 0.961             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[27]                                                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[29]                                    ; 0.959             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[1]                                                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[3]                                     ; 0.958             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[6]                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[8]                                                              ; 0.957             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dtmcs[31]                                                         ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dtmcs[30]                                                           ; 0.955             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[8]                                  ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[8]                                 ; 0.954             ;
+; u0|jtag_uart|altera_avalon_jtag_uart_inst|jtag_uart_altera_avalon_jtag_uart_1924_dwkezqq_alt_jtag_atlantic|tck_t_dav ; u0|jtag_uart|altera_avalon_jtag_uart_inst|jtag_uart_altera_avalon_jtag_uart_1924_dwkezqq_alt_jtag_atlantic|td_shift[0] ; 0.954             ;
+; issp_inst|altsource_probe_body_inst|wider_source_gen.wider_source_inst|shift_reg[0]                                  ; issp_inst|altsource_probe_body_inst|wider_source_gen.wider_source_inst|shift_reg[0]                                    ; 0.954             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[39]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[38]                                                             ; 0.954             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[24]                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[26]                                                             ; 0.952             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dtmcs[29]                                                         ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dtmcs[28]                                                           ; 0.952             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|mixer_addr_reg_internal[2]           ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|mixer_addr_reg_internal[4]             ; 0.952             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[34]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[34]                                                             ; 0.952             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[42]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[42]                                                             ; 0.952             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|jtag_ir_reg[3]                       ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|jtag_ir_reg[2]                         ; 0.952             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[41]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[41]                                                             ; 0.952             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|jtag_ir_reg[1]                       ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|jtag_ir_reg[0]                         ; 0.952             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[18]                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[20]                                                             ; 0.951             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|mixer_addr_reg_internal[0]           ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|mixer_addr_reg_internal[4]             ; 0.951             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|shadow_irf_reg[2][1]                 ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|irf_reg[2][1]                          ; 0.950             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[15]                                 ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[15]                                ; 0.947             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[8]                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[10]                                                             ; 0.947             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[7]                                                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[9]                                     ; 0.946             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[2]                                                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[4]                                     ; 0.946             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_data[6]                                                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|cmd_clk_xer|clock_xer|in_data_buffer[8]                                     ; 0.944             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|design_hash_reg[2]                   ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|design_hash_reg[1]                     ; 0.944             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[10]                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[12]                                                             ; 0.943             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|in_to_out_synchronizer|dreg[0]                      ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_toggle_1                                     ; 0.943             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[4]                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[6]                                                              ; 0.943             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[21]                              ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[23]                                                             ; 0.943             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|shadow_irf_reg[2][3]                 ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|irf_reg[2][3]                          ; 0.943             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[11]                                                           ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|shifted_dmi[10]                                                             ; 0.941             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|mix_writedata[0]                     ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|design_hash_reg[0]                     ; 0.941             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|out_data_buffer[13]                                 ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[13]                                ; 0.941             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[9]                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[11]                                                             ; 0.940             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|shadow_irf_reg[2][0]                 ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|irf_reg[2][0]                          ; 0.940             ;
+; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|rsp_clk_xer|clock_xer|output_stage|data1[5]                               ; u0|cpu|intel_niosv_g_inst|dbg_mod|dtm_inst|updated_dmi[7]                                                              ; 0.940             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|mix_writedata[1]                     ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|sldfabric|jtag_hub_gen.real_sld_jtag_hub|design_hash_reg[1]                     ; 0.939             ;
++----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------+
+Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
+
+

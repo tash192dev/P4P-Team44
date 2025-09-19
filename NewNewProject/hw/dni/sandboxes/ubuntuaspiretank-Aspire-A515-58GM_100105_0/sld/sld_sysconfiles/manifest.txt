@@ -1,0 +1,8 @@
+22 serialization::archive 19 0 0 8 0 0 0 22 alt_sld_fab_0.sopcinfo 0 0 10 text_model 0 0 0 1 1 
+ 12 cpu.sopcinfo 10 text_model 0 1 1 
+ 18 jtag_uart.sopcinfo 10 text_model 0 1 1 
+ 12 sys.sopcinfo 10 text_model 0 1 1 
+ 21 sys_clock_in.sopcinfo 10 text_model 0 1 1 
+ 34 sys_intel_onchip_memory_0.sopcinfo 10 text_model 0 1 1 
+ 21 sys_reset_in.sopcinfo 10 text_model 0 1 1 
+ 25 sys_sysid_qsys_0.sopcinfo 10 text_model 0 1 1 

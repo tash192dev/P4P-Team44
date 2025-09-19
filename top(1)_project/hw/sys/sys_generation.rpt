@@ -15,6 +15,7 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Component Instantiation Warning: sys.jtag_uart: Warnings found in IP parameterization.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
@@ -33,6 +34,7 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Component Instantiation Warning: sys.jtag_uart: Warnings found in IP parameterization.
 Info: sys: "Transforming system: sys"
 Info: sys: "Naming system components in system: sys"
 Info: sys: "Processing generation queue"
@@ -45,7 +47,7 @@ Info: sys: "Generating: sys_nvmm_1"
 Info: sys: "Generating: sys_intel_onchip_memory_0"
 Info: sys: "Generating: sys_reset_in"
 Info: sys: "Generating: sys_sysid_qsys_0"
-Info: sys: "Generating: sys_altera_mm_interconnect_1920_wvxmrgi"
+Info: sys: "Generating: sys_altera_mm_interconnect_1920_yzv3z3y"
 Info: sys: "Generating: sys_altera_irq_mapper_2001_ghcid5i"
 Info: sys: "Generating: altera_reset_controller"
 Info: sys: "Generating: sys_altera_merlin_axi_translator_1950_sjnedva"

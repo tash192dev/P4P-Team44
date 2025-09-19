@@ -1,0 +1,140 @@
+Assembler report for top
+Tue Sep 16 15:28:49 2025
+Quartus Prime Version 24.1.0 Build 115 03/21/2024 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Parallel Compilation
+  5. Assembler Messages
+  6. Assembler Encrypted IP Cores Summary
+  7. Assembler Generated Files
+  8. Assembler Device Options: top.sof
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Tue Sep 16 15:28:49 2025 ;
+; Revision Name         ; top                                   ;
+; Top-level Entity Name ; top                                   ;
+; Family                ; Arria 10                              ;
+; Device                ; 10AS066N3F40E2SG                      ;
+; Timing Models         ; Final                                 ;
+; Power Models          ; Final                                 ;
+; Device Status         ; Final                                 ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Assembler Settings                                                                                 ;
++------------------------------------------------------------------+----------------+----------------+
+; Option                                                           ; Setting        ; Default Value  ;
++------------------------------------------------------------------+----------------+----------------+
+; Enable parallel Assembler and Timing Analyzer during compilation ; On             ; On             ;
+; Enable compact report table                                      ; Off            ; Off            ;
+; Design Assistant include IP blocks                               ; Off            ; Off            ;
+; High fanout net threshold for RAM inference                      ; 15             ; 15             ;
+; Design Assistant limit on reported violations per rule           ; 5000           ; 5000           ;
+; Generate compressed bitstreams                                   ; On             ; On             ;
+; Auto user code                                                   ; On             ; On             ;
+; Configuration device                                             ; Auto           ; Auto           ;
+; Voltage output format                                            ; Auto discovery ; Auto discovery ;
+; Translated voltage value unit                                    ; Volts          ; Volts          ;
+; Configuration device auto user code                              ; Off            ; Off            ;
+; Generate Partial Reconfiguration Raw Binary File (.rbf)          ; Off            ; Off            ;
+; Release clears before tri-states                                 ; Off            ; Off            ;
+; Auto-restart configuration after error                           ; On             ; On             ;
+; Enable OCT_DONE                                                  ; Off            ; Off            ;
+; Enable autonomous PCIe HIP mode                                  ; Off            ; Off            ;
+; Generate programming files                                       ; Off            ; Off            ;
+; Enables the HPS early release of HPS IO                          ; Off            ; Off            ;
++------------------------------------------------------------------+----------------+----------------+
+
+
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 8      ;
++----------------------------+--------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 24.1.0 Build 115 03/21/2024 SC Pro Edition
+    Info: Processing started: Tue Sep 16 15:28:24 2025
+    Info: System process ID: 109597
+Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off top -c top
+Info (16677): Loading final database.
+Info (16734): Loading "final" snapshot for partition "root_partition".
+Info (16734): Loading "final" snapshot for partition "auto_fab_0".
+Info (16678): Successfully loaded final database: elapsed time is 00:00:03.
+Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 5091 megabytes
+    Info: Processing ended: Tue Sep 16 15:28:49 2025
+    Info: Elapsed time: 00:00:25
+    Info: System process ID: 109597
+
+
++------------------------------------------------------------------------------------------+
+; Assembler Encrypted IP Cores Summary                                                     ;
++------------+--------------------------------------------------------------+--------------+
+; Vendor     ; IP Core Name                                                 ; License Type ;
++------------+--------------------------------------------------------------+--------------+
+; Intel FPGA ; Nios V/g General Purpose Processor Intel FPGA IP (6AF7 018C) ; Licensed     ;
+; Intel FPGA ; Signal Tap (6AF7 BCE1)                                       ; Licensed     ;
+; Intel FPGA ; Signal Tap (6AF7 BCEC)                                       ; Licensed     ;
++------------+--------------------------------------------------------------+--------------+
+
+
++-----------------------------------------------------------------------------+
+; Assembler Generated Files                                                   ;
++-----------------------------------------------------------------------------+
+; File Name                                                                   ;
++-----------------------------------------------------------------------------+
+; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/output_files/top.sof ;
++-----------------------------------------------------------------------------+
+
+
++----------------------------------------------------+
+; Assembler Device Options: top.sof                  ;
++----------------+-----------------------------------+
+; Option         ; Setting                           ;
++----------------+-----------------------------------+
+; JTAG usercode  ; 0xFFFFFFFF                        ;
+; Checksum       ; 0x1D9D1AAF                        ;
+; Design hash    ; CE2F2436D3F912A336CC53041EDD4B23  ;
++----------------+-----------------------------------+
+
+

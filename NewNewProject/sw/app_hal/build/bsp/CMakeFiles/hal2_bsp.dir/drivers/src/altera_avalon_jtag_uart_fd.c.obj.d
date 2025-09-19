@@ -1,0 +1,19 @@
+bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj: \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/drivers/src/altera_avalon_jtag_uart_fd.c \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/alt_types.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/sys/alt_dev.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/./system.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/./linker.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/sys/alt_llist.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/priv/alt_dev_llist.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/drivers/inc/altera_avalon_jtag_uart.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/sys/alt_alarm.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/sys/alt_llist.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/priv/alt_alarm.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/sys/alt_warning.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/os/alt_hooks.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/os/alt_sem.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/priv/alt_no_error.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/HAL/inc/os/alt_flag.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/drivers/inc/altera_avalon_jtag_uart_fd.h

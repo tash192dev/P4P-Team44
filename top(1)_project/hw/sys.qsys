@@ -228,9 +228,9 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:value>&lt;systemInfosDefinition&gt;
     &lt;connPtSystemInfos&gt;
         &lt;entry&gt;
-            &lt;key&gt;clock_in_in_clk&lt;/key&gt;
+            &lt;key&gt;clk&lt;/key&gt;
             &lt;value&gt;
-                &lt;connectionPointName&gt;clock_in_in_clk&lt;/connectionPointName&gt;
+                &lt;connectionPointName&gt;clk&lt;/connectionPointName&gt;
                 &lt;suppliedSystemInfos&gt;
                     &lt;entry&gt;
                         &lt;key&gt;CLOCK_RATE&lt;/key&gt;
@@ -347,7 +347,7 @@ https://fpgasoftware.intel.com/eula.-->
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;clockRate&lt;/key&gt;
-                            &lt;value&gt;50000000&lt;/value&gt;
+                            &lt;value&gt;50000&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;clockRateKnown&lt;/key&gt;
@@ -403,7 +403,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;suppliedSystemInfos&gt;
                         &lt;entry&gt;
                             &lt;key&gt;CLOCK_RATE&lt;/key&gt;
-                            &lt;value&gt;50000000&lt;/value&gt;
+                            &lt;value&gt;50000&lt;/value&gt;
                         &lt;/entry&gt;
                     &lt;/suppliedSystemInfos&gt;
                     &lt;consumedSystemInfos/&gt;
@@ -483,7 +483,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;clockRate&lt;/key&gt;
-                        &lt;value&gt;50000000&lt;/value&gt;
+                        &lt;value&gt;50000&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;clockRateKnown&lt;/key&gt;
@@ -554,7 +554,7 @@ https://fpgasoftware.intel.com/eula.-->
             <ipxact:parameter parameterId="liveModuleName" type="string">
               <ipxact:name>liveModuleName</ipxact:name>
               <ipxact:displayName>Live Module Name</ipxact:displayName>
-              <ipxact:value>altera_clock_bridge_inst</ipxact:value>
+              <ipxact:value>clock_in</ipxact:value>
             </ipxact:parameter>
             <ipxact:parameter parameterId="logicalView" type="string">
               <ipxact:name>logicalView</ipxact:name>
@@ -2157,7 +2157,7 @@ https://fpgasoftware.intel.com/eula.-->
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;CLOCK_RATE&lt;/key&gt;
-                            &lt;value&gt;50000000&lt;/value&gt;
+                            &lt;value&gt;50000&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;RESET_DOMAIN&lt;/key&gt;
@@ -3796,7 +3796,7 @@ https://fpgasoftware.intel.com/eula.-->
     &lt;assignmentValueMap&gt;
         &lt;entry&gt;
             &lt;key&gt;embeddedsw.CMacro.CPU_FREQ&lt;/key&gt;
-            &lt;value&gt;50000000u&lt;/value&gt;
+            &lt;value&gt;50000u&lt;/value&gt;
         &lt;/entry&gt;
         &lt;entry&gt;
             &lt;key&gt;embeddedsw.CMacro.DATA_ADDR_WIDTH&lt;/key&gt;
@@ -3932,7 +3932,7 @@ https://fpgasoftware.intel.com/eula.-->
         &lt;/entry&gt;
         &lt;entry&gt;
             &lt;key&gt;embeddedsw.dts.params.clock-frequency&lt;/key&gt;
-            &lt;value&gt;50000000u&lt;/value&gt;
+            &lt;value&gt;50000u&lt;/value&gt;
         &lt;/entry&gt;
         &lt;entry&gt;
             &lt;key&gt;embeddedsw.dts.params.dcache-line-size&lt;/key&gt;
@@ -4540,7 +4540,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;consumedSystemInfos&gt;
                         &lt;entry&gt;
                             &lt;key&gt;CLOCK_RATE&lt;/key&gt;
-                            &lt;value&gt;50000000&lt;/value&gt;
+                            &lt;value&gt;50000&lt;/value&gt;
                         &lt;/entry&gt;
                     &lt;/consumedSystemInfos&gt;
                 &lt;/value&gt;
@@ -5773,7 +5773,7 @@ https://fpgasoftware.intel.com/eula.-->
         &lt;parameterHdlType&gt;INTEGER&lt;/parameterHdlType&gt;
         &lt;parameterName&gt;N&lt;/parameterName&gt;
         &lt;parameterType&gt;java.lang.Integer&lt;/parameterType&gt;
-        &lt;parameterValue&gt;25&lt;/parameterValue&gt;
+        &lt;parameterValue&gt;4&lt;/parameterValue&gt;
     &lt;/hdlParameterDescriptorDefinition&gt;
     &lt;hdlParameterDescriptorDefinition&gt;
         &lt;enabled&gt;true&lt;/enabled&gt;
@@ -8170,7 +8170,11 @@ https://fpgasoftware.intel.com/eula.-->
     <altera:hdl_parameter_mappings></altera:hdl_parameter_mappings>
     <altera:preserved_ports_for_debug></altera:preserved_ports_for_debug>
     <altera:altera_interface_boundary>
-      <altera:interface_mapping altera:name="clock_in_in_clk" altera:internal="clock_in.in_clk" altera:type="clock" altera:dir="end"></altera:interface_mapping>
+      <altera:interface_mapping altera:name="clk" altera:internal="clock_in.in_clk" altera:type="clock" altera:dir="end">
+        <altera:port_mapping altera:name="clk_clk" altera:internal="in_clk">
+          <altera:pin_mapping altera:index="0" altera:pin_location="PIN_AM10" altera:io_standard="LVDS"></altera:pin_mapping>
+        </altera:port_mapping>
+      </altera:interface_mapping>
       <altera:interface_mapping altera:name="reset" altera:internal="reset_in.in_reset" altera:type="reset" altera:dir="end"></altera:interface_mapping>
     </altera:altera_interface_boundary>
     <ipxact:components>

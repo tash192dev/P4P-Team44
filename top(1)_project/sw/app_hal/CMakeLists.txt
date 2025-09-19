@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.14)
 
-add_subdirectory(../alliwannado_bsp alliwannado_bsp)
+add_subdirectory(../bsp bsp)
 
-include(../alliwannado_bsp/toolchain.cmake)
+include(../bsp/toolchain.cmake)
 
 project(app_hal)
 
@@ -10,7 +10,7 @@ add_executable(app_hal.elf)
 
 target_sources(app_hal.elf
     PRIVATE
-        hello.c
+        newhello.c
 )
 
 target_include_directories(app_hal.elf

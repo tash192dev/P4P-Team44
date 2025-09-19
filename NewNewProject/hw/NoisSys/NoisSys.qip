@@ -1,0 +1,37 @@
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -library "NoisSys" -name SOPCINFO_FILE [file join $::quartus(qip_path) "NoisSys.sopcinfo"]
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name SLD_INFO "QSYS_NAME NoisSys HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "NoisSys" -name MISC_FILE [file join $::quartus(qip_path) "NoisSys.cmp"]
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name IP_TARGETED_DEVICE_FAMILY "Arria 10"
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name IP_GENERATED_DEVICE_FAMILY "{Arria 10}"
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name IP_QSYS_MODE "SYSTEM"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "NoisSys" -name MISC_FILE [file join $::quartus(qip_path) "../NoisSys.qsys"]
+
+set_global_assignment -entity "NoisSys_clock_in" -library "NoisSys_clock_in" -name IP_COMPONENT_NAME "Tm9pc1N5c19jbG9ja19pbg=="
+set_global_assignment -entity "NoisSys_clock_in" -library "NoisSys_clock_in" -name IP_COMPONENT_DISPLAY_NAME "R2VuZXJpYyBDb21wb25lbnQ="
+set_global_assignment -entity "NoisSys_clock_in" -library "NoisSys_clock_in" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "NoisSys_clock_in" -library "NoisSys_clock_in" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "NoisSys_clock_in" -library "NoisSys_clock_in" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "NoisSys_clock_in" -library "NoisSys_clock_in" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "NoisSys_clock_in" -library "NoisSys_clock_in" -name IP_COMPONENT_DESCRIPTION "QSBkeW5hbWljIGNvbXBvbmVudCB3aGVyZSB5b3UgY2FuIGFkZCwgbW9kaWZ5IG9yIHJlbW92ZSBpbnRlcmZhY2VzIGFuZCBwb3J0cyBvbiB0aGUgZmx5"
+set_global_assignment -entity "NoisSys_clock_in" -library "NoisSys_clock_in" -name IP_COMPONENT_GROUP "R2VuZXJpYyBDb21wb25lbnQ="
+set_global_assignment -entity "NoisSys_reset_in" -library "NoisSys_reset_in" -name IP_COMPONENT_NAME "Tm9pc1N5c19yZXNldF9pbg=="
+set_global_assignment -entity "NoisSys_reset_in" -library "NoisSys_reset_in" -name IP_COMPONENT_DISPLAY_NAME "R2VuZXJpYyBDb21wb25lbnQ="
+set_global_assignment -entity "NoisSys_reset_in" -library "NoisSys_reset_in" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "NoisSys_reset_in" -library "NoisSys_reset_in" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "NoisSys_reset_in" -library "NoisSys_reset_in" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "NoisSys_reset_in" -library "NoisSys_reset_in" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "NoisSys_reset_in" -library "NoisSys_reset_in" -name IP_COMPONENT_DESCRIPTION "QSBkeW5hbWljIGNvbXBvbmVudCB3aGVyZSB5b3UgY2FuIGFkZCwgbW9kaWZ5IG9yIHJlbW92ZSBpbnRlcmZhY2VzIGFuZCBwb3J0cyBvbiB0aGUgZmx5"
+set_global_assignment -entity "NoisSys_reset_in" -library "NoisSys_reset_in" -name IP_COMPONENT_GROUP "R2VuZXJpYyBDb21wb25lbnQ="
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name IP_COMPONENT_NAME "Tm9pc1N5cw=="
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name IP_COMPONENT_DISPLAY_NAME "Tm9pc1N5cw=="
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "NoisSys" -library "NoisSys" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "NoisSys" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/NoisSys.v"]
+

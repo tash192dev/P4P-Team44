@@ -1,0 +1,8 @@
+/home/ubuntuaspiretank/p4p/FreshLicense/software/build/CMakeFiles/app.elf.dir
+/home/ubuntuaspiretank/p4p/FreshLicense/software/build/CMakeFiles/create-objdump.dir
+/home/ubuntuaspiretank/p4p/FreshLicense/software/build/CMakeFiles/niosv-stack-report.dir
+/home/ubuntuaspiretank/p4p/FreshLicense/software/build/CMakeFiles/edit_cache.dir
+/home/ubuntuaspiretank/p4p/FreshLicense/software/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntuaspiretank/p4p/FreshLicense/software/build/bsp/CMakeFiles/hal2_bsp.dir
+/home/ubuntuaspiretank/p4p/FreshLicense/software/build/bsp/CMakeFiles/edit_cache.dir
+/home/ubuntuaspiretank/p4p/FreshLicense/software/build/bsp/CMakeFiles/rebuild_cache.dir

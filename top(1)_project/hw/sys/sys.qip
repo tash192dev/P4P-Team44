@@ -8,6 +8,8 @@ set_global_assignment -library "sys" -name SLD_FILE [file join $::quartus(qip_pa
 set_global_assignment -entity "sys" -library "sys" -name IP_TARGETED_DEVICE_FAMILY "Arria 10"
 set_global_assignment -entity "sys" -library "sys" -name IP_GENERATED_DEVICE_FAMILY "{Arria 10}"
 set_global_assignment -entity "sys" -library "sys" -name IP_QSYS_MODE "SYSTEM"
+set_instance_assignment -entity "sys" -to "clk_clk" -name IO_STANDARD "LVDS"
+set_instance_assignment -entity "sys" -to "clk_clk" -name IO_LOCATION "PIN_AM10"
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "sys" -name MISC_FILE [file join $::quartus(qip_path) "../sys.qsys"]
 
@@ -303,14 +305,14 @@ set_global_assignment -entity "sys_altera_merlin_multiplexer_1922_hobyaqy" -libr
 set_global_assignment -entity "sys_altera_merlin_multiplexer_1922_hobyaqy" -library "altera_merlin_multiplexer_1922" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3pjbjE1MTM5ODcyODI5MzUuaHRtbCNtd2gxNDA5OTU4ODI4NzMy"
 set_global_assignment -entity "sys_altera_merlin_multiplexer_1922_hobyaqy" -library "altera_merlin_multiplexer_1922" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvZGFtL3d3dy9wcm9ncmFtbWFibGUvdXMvZW4vcGRmcy9saXRlcmF0dXJlL3VnL3VnLXFwcC1wbGF0Zm9ybS1kZXNpZ25lci5wZGY="
 set_global_assignment -entity "sys_altera_merlin_multiplexer_1922_hobyaqy" -library "altera_merlin_multiplexer_1922" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2hjbzE0MTY4MzYxNDU1NTUuaHRtbCNoY28xNDE2ODM2NjUzMjIx"
-set_global_assignment -entity "sys_altera_mm_interconnect_1920_wvxmrgi" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_NAME "c3lzX2FsdGVyYV9tbV9pbnRlcmNvbm5lY3RfMTkyMF93dnhtcmdp"
-set_global_assignment -entity "sys_altera_mm_interconnect_1920_wvxmrgi" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_DISPLAY_NAME "TU0gSW50ZXJjb25uZWN0"
-set_global_assignment -entity "sys_altera_mm_interconnect_1920_wvxmrgi" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
-set_global_assignment -entity "sys_altera_mm_interconnect_1920_wvxmrgi" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_INTERNAL "On"
-set_global_assignment -entity "sys_altera_mm_interconnect_1920_wvxmrgi" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
-set_global_assignment -entity "sys_altera_mm_interconnect_1920_wvxmrgi" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_VERSION "MTkuMi4w"
-set_global_assignment -entity "sys_altera_mm_interconnect_1920_wvxmrgi" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_DESCRIPTION "TU0gSW50ZXJjb25uZWN0"
-set_global_assignment -entity "sys_altera_mm_interconnect_1920_wvxmrgi" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_GROUP "TWVybGluIENvbXBvbmVudHM="
+set_global_assignment -entity "sys_altera_mm_interconnect_1920_yzv3z3y" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_NAME "c3lzX2FsdGVyYV9tbV9pbnRlcmNvbm5lY3RfMTkyMF95enYzejN5"
+set_global_assignment -entity "sys_altera_mm_interconnect_1920_yzv3z3y" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_DISPLAY_NAME "TU0gSW50ZXJjb25uZWN0"
+set_global_assignment -entity "sys_altera_mm_interconnect_1920_yzv3z3y" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "sys_altera_mm_interconnect_1920_yzv3z3y" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "sys_altera_mm_interconnect_1920_yzv3z3y" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "sys_altera_mm_interconnect_1920_yzv3z3y" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_VERSION "MTkuMi4w"
+set_global_assignment -entity "sys_altera_mm_interconnect_1920_yzv3z3y" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_DESCRIPTION "TU0gSW50ZXJjb25uZWN0"
+set_global_assignment -entity "sys_altera_mm_interconnect_1920_yzv3z3y" -library "altera_mm_interconnect_1920" -name IP_COMPONENT_GROUP "TWVybGluIENvbXBvbmVudHM="
 set_global_assignment -entity "sys_altera_irq_mapper_2001_ghcid5i" -library "altera_irq_mapper_2001" -name IP_COMPONENT_NAME "c3lzX2FsdGVyYV9pcnFfbWFwcGVyXzIwMDFfZ2hjaWQ1aQ=="
 set_global_assignment -entity "sys_altera_irq_mapper_2001_ghcid5i" -library "altera_irq_mapper_2001" -name IP_COMPONENT_DISPLAY_NAME "TWVybGluIElSUSBNYXBwZXIgSW50ZWwgRlBHQSBJUA=="
 set_global_assignment -entity "sys_altera_irq_mapper_2001_ghcid5i" -library "altera_irq_mapper_2001" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
@@ -372,7 +374,7 @@ set_global_assignment -library "altera_merlin_demultiplexer_1921" -name SYSTEMVE
 set_global_assignment -library "altera_merlin_demultiplexer_1921" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_merlin_demultiplexer_1921/synth/sys_altera_merlin_demultiplexer_1921_imrd56i.sv"]
 set_global_assignment -library "altera_merlin_multiplexer_1922" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_merlin_multiplexer_1922/synth/sys_altera_merlin_multiplexer_1922_5yxsbci.sv"]
 set_global_assignment -library "altera_merlin_multiplexer_1922" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_merlin_multiplexer_1922/synth/sys_altera_merlin_multiplexer_1922_hobyaqy.sv"]
-set_global_assignment -library "altera_mm_interconnect_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_mm_interconnect_1920/synth/sys_altera_mm_interconnect_1920_wvxmrgi.v"]
+set_global_assignment -library "altera_mm_interconnect_1920" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_mm_interconnect_1920/synth/sys_altera_mm_interconnect_1920_yzv3z3y.v"]
 set_global_assignment -library "altera_irq_mapper_2001" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_irq_mapper_2001/synth/sys_altera_irq_mapper_2001_ghcid5i.sv"]
 set_global_assignment -library "altera_reset_controller_1922" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_reset_controller_1922/synth/altera_reset_controller.v"]
 set_global_assignment -library "altera_reset_controller_1922" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_reset_controller_1922/synth/altera_reset_synchronizer.v"]
@@ -386,9 +388,9 @@ set_global_assignment -entity "altera_reset_controller" -library "altera_reset_c
 set_global_assignment -entity "sys_altera_irq_mapper_2001_ghcid5i" -library "altera_irq_mapper_2001" -name IP_TOOL_NAME "altera_irq_mapper"
 set_global_assignment -entity "sys_altera_irq_mapper_2001_ghcid5i" -library "altera_irq_mapper_2001" -name IP_TOOL_VERSION "20.0.1"
 set_global_assignment -entity "sys_altera_irq_mapper_2001_ghcid5i" -library "altera_irq_mapper_2001" -name IP_TOOL_ENV "QsysPrimePro"
-set_global_assignment -entity "sys_altera_mm_interconnect_1920_wvxmrgi" -library "altera_mm_interconnect_1920" -name IP_TOOL_NAME "altera_mm_interconnect"
-set_global_assignment -entity "sys_altera_mm_interconnect_1920_wvxmrgi" -library "altera_mm_interconnect_1920" -name IP_TOOL_VERSION "19.2.0"
-set_global_assignment -entity "sys_altera_mm_interconnect_1920_wvxmrgi" -library "altera_mm_interconnect_1920" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "sys_altera_mm_interconnect_1920_yzv3z3y" -library "altera_mm_interconnect_1920" -name IP_TOOL_NAME "altera_mm_interconnect"
+set_global_assignment -entity "sys_altera_mm_interconnect_1920_yzv3z3y" -library "altera_mm_interconnect_1920" -name IP_TOOL_VERSION "19.2.0"
+set_global_assignment -entity "sys_altera_mm_interconnect_1920_yzv3z3y" -library "altera_mm_interconnect_1920" -name IP_TOOL_ENV "QsysPrimePro"
 set_global_assignment -entity "sys_altera_merlin_multiplexer_1922_hobyaqy" -library "altera_merlin_multiplexer_1922" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "sys_altera_merlin_multiplexer_1922_hobyaqy" -library "altera_merlin_multiplexer_1922" -name IP_TOOL_VERSION "19.2.2"
 set_global_assignment -entity "sys_altera_merlin_multiplexer_1922_hobyaqy" -library "altera_merlin_multiplexer_1922" -name IP_TOOL_ENV "QsysPrimePro"

@@ -19,8 +19,8 @@ use IEEE.numeric_std.all;
 
 entity sys is
 	port (
-		clock_in_in_clk_clk : in std_logic := '0'; -- clock_in_in_clk.clk
-		reset_reset         : in std_logic := '0'  --           reset.reset
+		clk_clk     : in std_logic := '0'; --   clk.clk
+		reset_reset : in std_logic := '0'  -- reset.reset
 	);
 end entity sys;
 
@@ -151,7 +151,7 @@ architecture rtl of sys is
 
 	component sys_nvmm_1_cmp is
 		generic (
-			N : integer := 25;
+			N : integer := 4;
 			K : integer := 5
 		);
 		port (
@@ -197,7 +197,7 @@ architecture rtl of sys is
 		);
 	end component sys_sysid_qsys_0_cmp;
 
-	component sys_altera_mm_interconnect_1920_wvxmrgi_cmp is
+	component sys_altera_mm_interconnect_1920_yzv3z3y_cmp is
 		port (
 			cpu_data_manager_awaddr                 : in  std_logic_vector(31 downto 0) := (others => 'X'); -- awaddr
 			cpu_data_manager_awlen                  : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- awlen
@@ -284,7 +284,7 @@ architecture rtl of sys is
 			cpu_reset_reset_bridge_in_reset_reset   : in  std_logic                     := 'X';             -- reset
 			clock_in_out_clk_clk                    : in  std_logic                     := 'X'              -- clk
 		);
-	end component sys_altera_mm_interconnect_1920_wvxmrgi_cmp;
+	end component sys_altera_mm_interconnect_1920_yzv3z3y_cmp;
 
 	component sys_altera_irq_mapper_2001_ghcid5i_cmp is
 		port (
@@ -478,8 +478,8 @@ architecture rtl of sys is
 		use entity sys_reset_in.sys_reset_in;
 	for sysid_qsys_0 : sys_sysid_qsys_0_cmp
 		use entity sys_sysid_qsys_0.sys_sysid_qsys_0;
-	for mm_interconnect_0 : sys_altera_mm_interconnect_1920_wvxmrgi_cmp
-		use entity altera_mm_interconnect_1920.sys_altera_mm_interconnect_1920_wvxmrgi;
+	for mm_interconnect_0 : sys_altera_mm_interconnect_1920_yzv3z3y_cmp
+		use entity altera_mm_interconnect_1920.sys_altera_mm_interconnect_1920_yzv3z3y;
 	for irq_mapper : sys_altera_irq_mapper_2001_ghcid5i_cmp
 		use entity altera_irq_mapper_2001.sys_altera_irq_mapper_2001_ghcid5i;
 	for rst_controller : altera_reset_controller_cmp
@@ -488,7 +488,7 @@ begin
 
 	clock_in : component sys_clock_in_cmp
 		port map (
-			in_clk  => clock_in_in_clk_clk,  --  in_clk.clk
+			in_clk  => clk_clk,              --  in_clk.clk
 			out_clk => clock_in_out_clk_clk  -- out_clk.clk
 		);
 
@@ -642,7 +642,7 @@ begin
 			address  => mm_interconnect_0_sysid_qsys_0_control_slave_address(0)  --              .address
 		);
 
-	mm_interconnect_0 : component sys_altera_mm_interconnect_1920_wvxmrgi_cmp
+	mm_interconnect_0 : component sys_altera_mm_interconnect_1920_yzv3z3y_cmp
 		port map (
 			cpu_data_manager_awaddr                 => cpu_data_manager_awaddr,                                   --                cpu_data_manager.awaddr
 			cpu_data_manager_awlen                  => cpu_data_manager_awlen,                                    --                                .awlen

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altera="http://www.altera.com/XMLSchema/Qsys/SystemTree">
+  <instanceKey xsi:type="xs:string">sys_nvmm_0</instanceKey>
+  <instanceData xsi:type="data">
+    <parameters></parameters>
+    <interconnectAssignments></interconnectAssignments>
+    <className>sys_nvmm_0</className>
+    <version>1.0</version>
+    <name>sys_nvmm_0</name>
+    <uniqueName>sys_nvmm_0</uniqueName>
+    <nonce>0</nonce>
+    <incidentConnections></incidentConnections>
+  </instanceData>
+  <children>
+    <node>
+      <instanceKey xsi:type="xs:string">nvmm_0</instanceKey>
+      <instanceData xsi:type="data">
+        <parameters>
+          <parameter>
+            <name>N</name>
+            <value>4</value>
+          </parameter>
+        </parameters>
+        <interconnectAssignments></interconnectAssignments>
+        <className>nvmm</className>
+        <version>1.0</version>
+        <name>nvmm_0</name>
+        <uniqueName>nvmm</uniqueName>
+        <fixedName>nvmm</fixedName>
+        <nonce>0</nonce>
+        <incidentConnections></incidentConnections>
+        <path>sys_nvmm_0.nvmm_0</path>
+      </instanceData>
+      <children></children>
+    </node>
+  </children>
+</node>

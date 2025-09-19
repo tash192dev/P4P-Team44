@@ -1,0 +1,29 @@
+bsp_ucosii/CMakeFiles/ucosii_hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj: \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/drivers/src/altera_avalon_jtag_uart_fd.c \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/alt_types.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/sys/alt_dev.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/./system.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/./linker.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/sys/alt_llist.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/priv/alt_dev_llist.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/drivers/inc/altera_avalon_jtag_uart.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/sys/alt_alarm.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/sys/alt_llist.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/priv/alt_alarm.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/sys/alt_warning.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/UCOSII/inc/os/alt_hooks.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/includes.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/os_cpu.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/sys/alt_irq.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/intel_niosv.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/alt_types.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/UCOSII/inc/os_cfg.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/UCOSII/inc/ucos_ii.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/HAL/inc/os_cpu.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/UCOSII/inc/os_trace.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/UCOSII/inc/os/alt_sem.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/UCOSII/inc/priv/alt_sem_ucosii.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/UCOSII/inc/os/alt_flag.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/UCOSII/inc/priv/alt_flag_ucosii.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_ucosii/drivers/inc/altera_avalon_jtag_uart_fd.h

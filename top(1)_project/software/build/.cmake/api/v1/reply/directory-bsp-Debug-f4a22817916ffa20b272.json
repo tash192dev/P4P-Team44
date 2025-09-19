@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "bsp",
+		"source" : "/home/ubuntuaspiretank/p4p/FreshLicense/software/bsp"
+	}
+}

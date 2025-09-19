@@ -9,7 +9,7 @@ entity nvmm is
 	generic(
 		-- Sys Array size 
 		N : integer := 4;
-		K : integer := 25
+		K : integer := 5
 	);
 	port (
 		NVMM_alu_result : in  std_logic_vector(31 downto 0) := (others => '0'); -- NVMM.alu_result

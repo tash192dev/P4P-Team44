@@ -1,0 +1,24 @@
+git clone --depth 1 https://github.com/tensorflow/tflite-micro.git
+python3 tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py -e hello_world tflite_app
+
+
+niosv-app --bsp-dir=../h --app-dir=tflite_app --srcs-recursive=tflite_app/examples,tflite_app/signal,tflite_app/tensorflow --incs=tflite_app,tflite_app/examples/hello_world,tflite_app/tensorflow,tflite_app/third_party/flatbuffers/include,tflite_app/third_party/gemmlowp,tflite_app/third_party/kissfft,tflite_app/third_party/ruy
+
+cmake -S tflite_app -B tflite_app/build/Release -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
+
+make -C tflite_app/build/Release
+
+-ffunction-sections -fdata-sections -fno-rtti -fno-exceptions
+-DTF_LITE_STATIC_MEMORY
+-std=c++17
+-Wl,--gc-sections
+-O3
+
+
+
+
+niosv-app --bsp-dir=software/bsp --app-dir=software/app --srcs-recursive=software/app/image_classification,software/app/signal,software/app/tensorflow --incs=software/app,software/app/image_classification/model,software/app/image_classification/image,software/app/tensorflow,software/app/third_party/flatbuffers/include,software/app/third_party/gemmlowp,software/app/third_party/kissfft,software/app/third_party/ruy
+
+cmake -S software/app -B software/app/build/Debug -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug
+
+make -C software/app/build/Debug

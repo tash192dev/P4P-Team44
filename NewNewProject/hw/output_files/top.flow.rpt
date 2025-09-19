@@ -1,0 +1,161 @@
+Flow report for top
+Tue Sep 16 15:28:49 2025
+Quartus Prime Version 24.1.0 Build 115 03/21/2024 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++--------------------------------------------------------------------------+
+; Flow Summary                                                             ;
++-----------------------------+--------------------------------------------+
+; Flow Status                 ; Successful - Tue Sep 16 15:28:49 2025      ;
+; Quartus Prime Version       ; 24.1.0 Build 115 03/21/2024 SC Pro Edition ;
+; Revision Name               ; top                                        ;
+; Top-level Entity Name       ; top                                        ;
+; Family                      ; Arria 10                                   ;
+; Device                      ; 10AS066N3F40E2SG                           ;
+; Timing Models               ; Final                                      ;
+; Power Models                ; Final                                      ;
+; Device Status               ; Final                                      ;
+; Logic utilization (in ALMs) ; 4,185 / 251,680 ( 2 % )                    ;
+; Total registers             ; 5125                                       ;
+; Total pins                  ; 1 / 812 ( < 1 % )                          ;
+; Total virtual pins          ; 0                                          ;
+; Total block memory bits     ; 21,046,016 / 43,642,880 ( 48 % )           ;
+; Total RAM Blocks            ; 1,290 / 2,131 ( 61 % )                     ;
+; Total DSP Blocks            ; 18 / 1,687 ( 1 % )                         ;
+; Total HSSI RX channels      ; 0 / 48 ( 0 % )                             ;
+; Total HSSI TX channels      ; 0 / 48 ( 0 % )                             ;
+; Total PLLs                  ; 0 / 96 ( 0 % )                             ;
++-----------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 09/16/2025 15:22:55 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; top                 ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                                     ;
++--------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name          ; Value                                                                                                                                                          ; Default Value ; Entity Name ; Section Id ;
++--------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID    ; 220374909987258.175799301039690                                                                                                                                ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/NoisSys/NoisSys.cmp                                                                                     ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/NoisSys.qsys                                                                                            ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/dni/sandboxes/ubuntuaspiretank-Aspire-A515-58GM_105226_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.cmp      ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/dni/sandboxes/ubuntuaspiretank-Aspire-A515-58GM_105226_0/sld/ipgen/alt_sld_fab_0.ip                     ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/NoisSys/NoisSys_clock_in/NoisSys_clock_in.cmp                                                        ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/NoisSys/NoisSys_clock_in.ip                                                                          ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/NoisSys/NoisSys_intel_niosv_g_0/NoisSys_intel_niosv_g_0.cmp                                          ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/NoisSys/NoisSys_intel_niosv_g_0.ip                                                                   ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/NoisSys/NoisSys_reset_in/NoisSys_reset_in.cmp                                                        ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/NoisSys/NoisSys_reset_in.ip                                                                          ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/cpu/cpu.cmp                                                                                      ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/cpu.ip                                                                                           ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/jtag_uart/jtag_uart.cmp                                                                          ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/jtag_uart.ip                                                                                     ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_clock_in/sys_clock_in.cmp                                                                    ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_clock_in.ip                                                                                  ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_intel_onchip_memory_0/sys_intel_onchip_memory_0.cmp                                          ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_intel_onchip_memory_0.ip                                                                     ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_nvmm_0/sys_nvmm_0.cmp                                                                        ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_nvmm_0.ip                                                                                    ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_reset_in/sys_reset_in.cmp                                                                    ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_reset_in.ip                                                                                  ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_sysid_qsys_0/sys_sysid_qsys_0.cmp                                                            ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_sysid_qsys_0.ip                                                                              ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/sys/sys.cmp                                                                                             ; --            ; --          ; --         ;
+; MISC_FILE                ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/sys.qsys                                                                                                ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/output_files                                                                                            ; --            ; --          ; --         ;
+; SLD_FILE                 ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/jtag_uart/jtag_uart.regmap                                                                       ; --            ; --          ; --         ;
+; SLD_FILE                 ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_sysid_qsys_0/sys_sysid_qsys_0.regmap                                                         ; --            ; --          ; --         ;
+; SLD_FILE                 ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/sys/sys.regmap                                                                                          ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/NoisSys/NoisSys.sopcinfo                                                                                ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/dni/sandboxes/ubuntuaspiretank-Aspire-A515-58GM_105226_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.sopcinfo ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/NoisSys/NoisSys_clock_in/NoisSys_clock_in.sopcinfo                                                   ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/NoisSys/NoisSys_intel_niosv_g_0/NoisSys_intel_niosv_g_0.sopcinfo                                     ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/NoisSys/NoisSys_reset_in/NoisSys_reset_in.sopcinfo                                                   ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/cpu/cpu.sopcinfo                                                                                 ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/jtag_uart/jtag_uart.sopcinfo                                                                     ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_clock_in/sys_clock_in.sopcinfo                                                               ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_intel_onchip_memory_0/sys_intel_onchip_memory_0.sopcinfo                                     ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_nvmm_0/sys_nvmm_0.sopcinfo                                                                   ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_reset_in/sys_reset_in.sopcinfo                                                               ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/sys/sys_sysid_qsys_0/sys_sysid_qsys_0.sopcinfo                                                       ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/sys/sys.sopcinfo                                                                                        ; --            ; --          ; --         ;
++--------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+
+
++------------------------------------------------------+
+; Flow Elapsed Time                                    ;
++-----------------+--------------+---------------------+
+; Module Name     ; Elapsed Time ; Peak Virtual Memory ;
++-----------------+--------------+---------------------+
+; Synthesis       ; 00:00:54     ; 1943 MB             ;
+; Fitter          ; 00:04:24     ; 6744 MB             ;
+; Timing Analyzer ; 00:00:06     ; 2336 MB             ;
+; Assembler       ; 00:00:26     ; 4961 MB             ;
+; Total           ; 00:05:50     ; --                  ;
++-----------------+--------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++-----------------+-----------------------------------+---------+------------+----------------+
+; Module Name     ; Machine Hostname                  ; OS Name ; OS Version ; Processor type ;
++-----------------+-----------------------------------+---------+------------+----------------+
+; Synthesis       ; ubuntuaspiretank-Aspire-A515-58GM ; Ubuntu  ; 24         ; x86_64         ;
+; Fitter          ; ubuntuaspiretank-Aspire-A515-58GM ; Ubuntu  ; 24         ; x86_64         ;
+; Timing Analyzer ; ubuntuaspiretank-Aspire-A515-58GM ; Ubuntu  ; 24         ; x86_64         ;
+; Assembler       ; ubuntuaspiretank-Aspire-A515-58GM ; Ubuntu  ; 24         ; x86_64         ;
++-----------------+-----------------------------------+---------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_syn --read_settings_files=on --write_settings_files=off top -c top
+quartus_fit --read_settings_files=on --write_settings_files=off top -c top
+quartus_sta top -c top --mode=finalize
+quartus_asm --read_settings_files=on --write_settings_files=off top -c top
+
+
+

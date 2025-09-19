@@ -1,0 +1,26 @@
+CMakeFiles/app.elf.dir/tensorflow/lite/micro/debug_log.cc.obj: \
+ /home/ubuntuaspiretank/p4p/P4P-Work/software/app/tensorflow/lite/micro/debug_log.cc \
+ /home/ubuntuaspiretank/p4p/P4P-Work/software/app/./tensorflow/lite/micro/debug_log.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0/cstdarg \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0/riscv32-unknown-elf/rv32imf/ilp32f/bits/c++config.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0/riscv32-unknown-elf/rv32imf/ilp32f/bits/os_defines.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0/riscv32-unknown-elf/rv32imf/ilp32f/bits/cpu_defines.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdarg.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0/cstddef \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0/cstdio \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/config.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/ieeefp.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/reent.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_types.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_types.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/lock.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/stdio.h

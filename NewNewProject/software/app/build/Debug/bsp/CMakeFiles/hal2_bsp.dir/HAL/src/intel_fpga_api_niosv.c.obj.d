@@ -1,0 +1,19 @@
+bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj: \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/bsp/HAL/src/intel_fpga_api_niosv.c \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/bsp/HAL/inc/sys/intel_fpga_api_cmn_inf.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdbool.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdint.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdint.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_intsup.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_stdint.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdarg.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/bsp/HAL/inc/intel_fpga_platform.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/bsp/HAL/inc/sys/intel_fpga_platform_niosv.h \
+ /home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/bsp/HAL/inc/sys/intel_fpga_platform_api_niosv.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/bsp/./system.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/bsp/./linker.h \
+ /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/bsp/HAL/inc/sys/intel_fpga_api_cmn_msg.h

@@ -64,8 +64,8 @@ int main()
 
                 // indices in 2x2 block
                 int idx1 = row * DATA_SIZE + col;             // top-left
-                int idx2 = row * DATA_SIZE + (col + 1);       // top-right
-                int idx3 = (row + 1) * DATA_SIZE + col;       // bottom-left
+                int idx2 = (row + 1) * DATA_SIZE + col;       // bottom-left
+                int idx3 = row * DATA_SIZE + (col + 1);       // top-right
                 int idx4 = (row + 1) * DATA_SIZE + (col + 1); // bottom-right
                 int data_a =
                     ((__uint8_t)data[idx1] << 24) |

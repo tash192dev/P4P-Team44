@@ -1,0 +1,8 @@
+/tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/app_ucosii/build/CMakeFiles/app_ucosii.elf.dir
+/tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/app_ucosii/build/CMakeFiles/create-objdump.dir
+/tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/app_ucosii/build/CMakeFiles/niosv-stack-report.dir
+/tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/app_ucosii/build/CMakeFiles/edit_cache.dir
+/tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/app_ucosii/build/CMakeFiles/rebuild_cache.dir
+/tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/app_ucosii/build/bsp_ucosii/CMakeFiles/ucosii_hal2_bsp.dir
+/tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/app_ucosii/build/bsp_ucosii/CMakeFiles/edit_cache.dir
+/tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/app_ucosii/build/bsp_ucosii/CMakeFiles/rebuild_cache.dir

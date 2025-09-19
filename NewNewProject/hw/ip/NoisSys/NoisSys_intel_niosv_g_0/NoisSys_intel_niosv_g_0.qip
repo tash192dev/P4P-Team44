@@ -1,0 +1,168 @@
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_TOP_LEVEL_COMPONENT_NAME "intel_niosv_g"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name OCS_IP_FILE "/home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/hw/ip/NoisSys/NoisSys_intel_niosv_g_0.ip"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name OCS_IP_TYPE "intel_niosv_g"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name OCS_IP_VERSION "2.2.0"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name OCS_IP_HASH "3jqx4ly"
+set_global_assignment -library "NoisSys_intel_niosv_g_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "NoisSys_intel_niosv_g_0.sopcinfo"]
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name SLD_INFO "QSYS_NAME NoisSys_intel_niosv_g_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "NoisSys_intel_niosv_g_0" -name MISC_FILE [file join $::quartus(qip_path) "NoisSys_intel_niosv_g_0.cmp"]
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_TARGETED_DEVICE_FAMILY "Arria 10"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_GENERATED_DEVICE_FAMILY "{Arria 10}"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "NoisSys_intel_niosv_g_0" -name MISC_FILE [file join $::quartus(qip_path) "../NoisSys_intel_niosv_g_0.ip"]
+
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_NAME "YWx0ZXJhX3Jlc2V0X2NvbnRyb2xsZXI="
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_DISPLAY_NAME "TWVybGluIFJlc2V0IENvbnRyb2xsZXIgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_VERSION "MTkuMi4y"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_DESCRIPTION "Rm9yIHN5c3RlbXMgd2l0aCBtdWx0aXBsZSByZXNldCBpbnB1dHMsIHRoZSBNZXJsaW4gUmVzZXQgQ29udHJvbGxlciBPUnMgYWxsIHJlc2V0IGlucHV0cyBhbmQgZ2VuZXJhdGVzIGEgc2luZ2xlIHJlc2V0IG91dHB1dC4="
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL0Nsb2NrczsgUExMcyBhbmQgUmVzZXRz"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL3pjbjE1MTM5ODcyODI5MzUuaHRtbCNtd2gxNDA5OTU4ODI4NzMy"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvZGFtL3d3dy9wcm9ncmFtbWFibGUvdXMvZW4vcGRmcy9saXRlcmF0dXJlL3VnL3VnLXFwcC1wbGF0Zm9ybS1kZXNpZ25lci5wZGY="
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL3Byb2dyYW1tYWJsZS9kb2N1bWVudGF0aW9uL2hjbzE0MTY4MzYxNDU1NTUuaHRtbCNoY28xNDE2ODM2NjUzMjIx"
+set_global_assignment -entity "niosv_reset_controller" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_NAME "bmlvc3ZfcmVzZXRfY29udHJvbGxlcg=="
+set_global_assignment -entity "niosv_reset_controller" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_DISPLAY_NAME "bmlvc3ZfcmVzZXRfY29udHJvbGxlcg=="
+set_global_assignment -entity "niosv_reset_controller" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "niosv_reset_controller" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "niosv_reset_controller" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "niosv_reset_controller" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_VERSION "Mi4yLjA="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_NAME "Tm9pc1N5c19pbnRlbF9uaW9zdl9nXzBfaW50ZWxfbmlvc3ZfZ191bml0XzIyMF96dXV5aW55"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_DISPLAY_NAME "TmlvcyBWL2cgUHJvY2Vzc29yIEhBUlQgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_VERSION "Mi4yLjA="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny" -library "intel_niosv_g_unit_220" -name IP_COMPONENT_GROUP "UHJvY2Vzc29ycyBhbmQgUGVyaXBoZXJhbHMvRW1iZWRkZWQgUHJvY2Vzc29ycw=="
+set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_COMPONENT_NAME "bmlvc3ZfdGltZXJfbXNpcA=="
+set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_COMPONENT_DISPLAY_NAME "TmlvcyBWIFRpbWVyIGFuZCBTb2Z0d2FyZSBJbnRlcnJ1cHQgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_COMPONENT_VERSION "MS4yLjA="
+set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_COMPONENT_DESCRIPTION "VGhpcyBtb2R1bGUgaG91c2VzIHRpbWVyIGFuZCBzb2Z0d2FyZSBpbnRlcnJ1cHQgZ2VuZXJhdG9ycyBmb3IgdGhlIE5pb3MgViBQcm9jZXNzb3Iu"
+set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_COMPONENT_GROUP "UHJvY2Vzc29ycyBhbmQgUGVyaXBoZXJhbHMvRW1iZWRkZWQgUHJvY2Vzc29ycw=="
+set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name IP_COMPONENT_NAME "bmlvc3ZfZG1fdG9w"
+set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name IP_COMPONENT_DISPLAY_NAME "TmlvcyBWIERlYnVnIG1vZHVsZSBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name IP_COMPONENT_VERSION "Mi4xLjA="
+set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name IP_COMPONENT_DESCRIPTION "VGhpcyBtb2R1bGUgaG91c2VzIHRoZSBSSVNDLVYgYmFzZWQgRGVidWcgTW9kdWxlIGZvciB0aGUgTmlvcyBWIFByb2Nlc3Nvci4="
+set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name IP_COMPONENT_GROUP "UHJvY2Vzc29ycyBhbmQgUGVyaXBoZXJhbHMvRW1iZWRkZWQgUHJvY2Vzc29ycw=="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly" -library "altera_irq_mapper_2001" -name IP_COMPONENT_NAME "Tm9pc1N5c19pbnRlbF9uaW9zdl9nXzBfYWx0ZXJhX2lycV9tYXBwZXJfMjAwMV8zanF4NGx5"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly" -library "altera_irq_mapper_2001" -name IP_COMPONENT_DISPLAY_NAME "TWVybGluIElSUSBNYXBwZXIgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly" -library "altera_irq_mapper_2001" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly" -library "altera_irq_mapper_2001" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly" -library "altera_irq_mapper_2001" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly" -library "altera_irq_mapper_2001" -name IP_COMPONENT_VERSION "MjAuMC4x"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly" -library "altera_irq_mapper_2001" -name IP_COMPONENT_DESCRIPTION "Q29udmVydHMgaW5kaXZpZHVhbCBpbnRlcnJ1cHQgd2lyZXMgdG8gYSBidXMuIEJ5IGRlZmF1bHQsIHRoZSBpbnRlcnJ1cHQgc2VuZGVyIGNvbm5lY3RlZCB0byB0aGUgcmVjZWl2ZXIwIGludGVyZmFjZSBvZiB0aGUgSVJRIG1hcHBlciBpcyB0aGUgaGlnaGVzdCBwcmlvcml0eSB3aXRoIHNlcXVlbnRpYWwgcmVjZWl2ZXJzIGJlaWluZyBzdWNjZXNzaXZlbHkgbG93ZXIgcHJpb3JpdHku"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly" -library "altera_irq_mapper_2001" -name IP_COMPONENT_GROUP "SW50ZWwgRlBHQSBJbnRlcmNvbm5lY3QvSW50ZXJydXB0"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_NAME "Tm9pc1N5c19pbnRlbF9uaW9zdl9nXzBfaW50ZWxfbmlvc3ZfZ18yMjBfcXZrZWhjeQ=="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_DISPLAY_NAME "TmlvcyBWL2cgR2VuZXJhbCBQdXJwb3NlIFByb2Nlc3NvciBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_VERSION "Mi4yLjA="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_DESCRIPTION "TmlvcyBWL2cgaXMgYSBnZW5lcmFsIHB1cnBvc2UgY29yZSBiYXNlZCBvbiB0aGUgUklTQy1WIFJWMzJJTSBjbGFzc2lmaWNhdGlvbi4="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_GROUP "UHJvY2Vzc29ycyBhbmQgUGVyaXBoZXJhbHMvRW1iZWRkZWQgUHJvY2Vzc29ycw=="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzYzMi9jdXJyZW50L292ZXJ2aWV3Lmh0bWw="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzcyNjk1Mi9jdXJyZW50L2Fib3V0LXRoZS1lbWJlZGRlZC1wcm9jZXNzb3IuaHRtbA=="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzc0MzgxMC9jdXJyZW50L292ZXJ2aWV3LW9mLWVtYmVkZGVkLXByb2Nlc3Nvci1kZXZlbG9wbWVudC5odG1s"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzA5OC8yMy00L3Byb2Nlc3Nvci1yZWxlYXNlLW5vdGVzLTQwNzMzLmh0bWw="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_COMPONENT_NAME "Tm9pc1N5c19pbnRlbF9uaW9zdl9nXzA="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "NoisSys_intel_niosv_g_0" -library "NoisSys_intel_niosv_g_0" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "altera_reset_controller_1922" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_reset_controller_1922/synth/altera_reset_controller.v"]
+set_global_assignment -library "altera_reset_controller_1922" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_reset_controller_1922/synth/altera_reset_synchronizer.v"]
+set_instance_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "altera_reset_controller_1922/synth/altera_reset_controller.sdc"] -no_sdc_promotion 
+set_global_assignment -library "intel_niosv_g_unit_220" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_reset_controller.v"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_opcode_def.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_mem_op_state.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_ram.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_altecc_32enc.v"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_altecc_32dec.v"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_tcm_ram.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_reg_file.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_alu.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_csr.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_interrupt_handler.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_multiplier.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_divider.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_instr_buffer.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_victim_buffer.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_g_fetch.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_g_dcache.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_g_instr_cache.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_g_fp_def.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_g_fpu.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/int33_to_fp32.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/fp32_to_int32.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/fp32_to_uint32.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/fp32_alu_cycloneivgx.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/fp32_mult_cycloneivgx.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/fp32_div.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/fp32_sqrt.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_g_dspba_library_ver.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SOURCE_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/fp32_sqrt_memoryC0_uid62_sqrtTables_lutmem.hex"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SOURCE_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/fp32_sqrt_memoryC1_uid65_sqrtTables_lutmem.hex"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SOURCE_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/fp32_sqrt_memoryC2_uid68_sqrtTables_lutmem.hex"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/instr_decoder_NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/niosv_g_core_NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny.sv"]
+set_global_assignment -library "intel_niosv_g_unit_220" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_220/synth/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "intel_niosv_timer_msip_120" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_timer_msip_120/synth/niosv_timer_msip.sv"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SOURCE_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/csr_mlab.mif"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SOURCE_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/debug_rom.mif"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/niosv_dm_def.sv"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/niosv_ram.sv"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/niosv_dm_jtag2mm.sv"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/niosv_dm_top.sv"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/niosv_debug_module.sv"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_std_synchronizer_bundle.v"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_std_synchronizer_nocut.v"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_std_synchronizer.v"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_avalon_st_clock_crosser.v"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_avalon_st_handshake_clock_crosser.v"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_avalon_st_pipeline_base.v"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_avalon_st_pipeline_stage.sv"]
+set_instance_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_avalon_st_handshake_clock_crosser.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_reset_synchronizer.v"]
+set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_reset_controller.v"]
+set_instance_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_reset_controller.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "altera_irq_mapper_2001" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_irq_mapper_2001/synth/NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly.sv"]
+set_global_assignment -library "intel_niosv_g_220" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_220/synth/NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy.v"]
+set_global_assignment -library "NoisSys_intel_niosv_g_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/NoisSys_intel_niosv_g_0.v"]
+
+
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_TOOL_NAME "intel_niosv_g"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_TOOL_VERSION "2.2.0"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_220_qvkehcy" -library "intel_niosv_g_220" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly" -library "altera_irq_mapper_2001" -name IP_TOOL_NAME "altera_irq_mapper"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly" -library "altera_irq_mapper_2001" -name IP_TOOL_VERSION "20.0.1"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_altera_irq_mapper_2001_3jqx4ly" -library "altera_irq_mapper_2001" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name IP_TOOL_NAME "intel_niosv_dbg_mod"
+set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name IP_TOOL_VERSION "2.1.0"
+set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_TOOL_NAME "intel_niosv_timer_msip"
+set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_TOOL_VERSION "1.2.0"
+set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny" -library "intel_niosv_g_unit_220" -name IP_TOOL_NAME "intel_niosv_g_unit"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny" -library "intel_niosv_g_unit_220" -name IP_TOOL_VERSION "2.2.0"
+set_global_assignment -entity "NoisSys_intel_niosv_g_0_intel_niosv_g_unit_220_zuuyiny" -library "intel_niosv_g_unit_220" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_TOOL_VERSION "19.2.2"
+set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1922" -name IP_TOOL_ENV "QsysPrimePro"
+

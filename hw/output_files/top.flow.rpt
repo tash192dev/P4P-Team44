@@ -1,0 +1,146 @@
+Flow report for top
+Mon Mar 11 04:32:07 2024
+Quartus Prime Version 24.1.0 Internal Build 106 03/10/2024 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++-----------------------------+-----------------------------------------------------+
+; Flow Status                 ; Successful - Mon Mar 11 04:32:07 2024               ;
+; Quartus Prime Version       ; 24.1.0 Internal Build 106 03/10/2024 SC Pro Edition ;
+; Revision Name               ; top                                                 ;
+; Top-level Entity Name       ; top                                                 ;
+; Family                      ; Arria 10                                            ;
+; Device                      ; 10AS066N3F40E2SG                                    ;
+; Timing Models               ; Final                                               ;
+; Power Models                ; Final                                               ;
+; Device Status               ; Final                                               ;
+; Logic utilization (in ALMs) ; 3,610 / 251,680 ( 1 % )                             ;
+; Total registers             ; 4766                                                ;
+; Total pins                  ; 1 / 812 ( < 1 % )                                   ;
+; Total virtual pins          ; 0                                                   ;
+; Total block memory bits     ; 2,171,648 / 43,642,880 ( 5 % )                      ;
+; Total RAM Blocks            ; 138 / 2,131 ( 6 % )                                 ;
+; Total DSP Blocks            ; 2 / 1,687 ( < 1 % )                                 ;
+; Total HSSI RX channels      ; 0 / 48 ( 0 % )                                      ;
+; Total HSSI TX channels      ; 0 / 48 ( 0 % )                                      ;
+; Total PLLs                  ; 0 / 96 ( 0 % )                                      ;
++-----------------------------+-----------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/11/2024 04:20:17 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; top                 ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                                                           ;
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name          ; Value                                                                                                                                                                                ; Default Value ; Entity Name ; Section Id ;
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID    ; 161341882397.171015610925548                                                                                                                                                         ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/dni/sandboxes/scc443020_25548_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.cmp      ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/dni/sandboxes/scc443020_25548_0/sld/ipgen/alt_sld_fab_0.ip                     ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/cpu/cpu.cmp                                                             ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/cpu.ip                                                                  ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/jtag_uart/jtag_uart.cmp                                                 ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/jtag_uart.ip                                                            ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_clock_in/sys_clock_in.cmp                                           ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_clock_in.ip                                                         ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_intel_onchip_memory_0/sys_intel_onchip_memory_0.cmp                 ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_intel_onchip_memory_0.ip                                            ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_reset_in/sys_reset_in.cmp                                           ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_reset_in.ip                                                         ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_sysid_qsys_0/sys_sysid_qsys_0.cmp                                   ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_sysid_qsys_0.ip                                                     ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/sys/sys.cmp                                                                    ; --            ; --          ; --         ;
+; MISC_FILE                ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/sys.qsys                                                                       ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY ; output_files                                                                                                                                                                         ; --            ; --          ; --         ;
+; SLD_FILE                 ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/jtag_uart/jtag_uart.regmap                                              ; --            ; --          ; --         ;
+; SLD_FILE                 ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_sysid_qsys_0/sys_sysid_qsys_0.regmap                                ; --            ; --          ; --         ;
+; SLD_FILE                 ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/sys/sys.regmap                                                                 ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/dni/sandboxes/scc443020_25548_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.sopcinfo ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/cpu/cpu.sopcinfo                                                        ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/jtag_uart/jtag_uart.sopcinfo                                            ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_clock_in/sys_clock_in.sopcinfo                                      ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_intel_onchip_memory_0/sys_intel_onchip_memory_0.sopcinfo            ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_reset_in/sys_reset_in.sopcinfo                                      ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/ip/sys/sys_sysid_qsys_0/sys_sysid_qsys_0.sopcinfo                              ; --            ; --          ; --         ;
+; SOPCINFO_FILE            ; /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/hw/sys/sys.sopcinfo                                                               ; --            ; --          ; --         ;
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+
+
++------------------------------------------------------+
+; Flow Elapsed Time                                    ;
++-----------------+--------------+---------------------+
+; Module Name     ; Elapsed Time ; Peak Virtual Memory ;
++-----------------+--------------+---------------------+
+; Synthesis       ; 00:02:00     ; 1848 MB             ;
+; Fitter          ; 00:08:56     ; 5958 MB             ;
+; Timing Analyzer ; 00:00:13     ; 2248 MB             ;
+; Assembler       ; 00:00:41     ; 4911 MB             ;
+; Total           ; 00:11:50     ; --                  ;
++-----------------+--------------+---------------------+
+
+
++-------------------------------------------------------------------------------+
+; Flow OS Summary                                                               ;
++-----------------+------------------+------------+------------+----------------+
+; Module Name     ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++-----------------+------------------+------------+------------+----------------+
+; Synthesis       ; scc443020        ; SUSE LINUX ; 12         ; x86_64         ;
+; Fitter          ; scc443020        ; SUSE LINUX ; 12         ; x86_64         ;
+; Timing Analyzer ; scc443020        ; SUSE LINUX ; 12         ; x86_64         ;
+; Assembler       ; scc443020        ; SUSE LINUX ; 12         ; x86_64         ;
++-----------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_syn top.qpf
+quartus_fit top.qpf
+quartus_sta top -c top --mode=finalize
+quartus_asm top.qpf
+
+
+

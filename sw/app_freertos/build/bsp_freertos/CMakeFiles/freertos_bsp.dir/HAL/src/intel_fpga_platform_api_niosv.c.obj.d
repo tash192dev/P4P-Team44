@@ -1,0 +1,21 @@
+bsp_freertos/CMakeFiles/freertos_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj: \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_freertos/HAL/src/intel_fpga_platform_api_niosv.c \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_freertos/HAL/inc/intel_fpga_platform_api.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_freertos/HAL/inc/sys/intel_fpga_platform_api_niosv.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_freertos/./system.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_freertos/./linker.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdarg.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdbool.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_freertos/HAL/inc/sys/intel_fpga_api_cmn_msg.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdint.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdint.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_intsup.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_stdint.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_freertos/HAL/inc/intel_fpga_platform.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_freertos/HAL/inc/sys/intel_fpga_platform_niosv.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_freertos/HAL/inc/sys/intel_fpga_api_cmn_dfl.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_freertos/HAL/inc/sys/intel_fpga_api_cmn_inf.h

@@ -1,0 +1,1 @@
+/home/ubuntuaspiretank/intelFPGA_pro/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -g -march=rv32im_zicbom -mabi=ilp32 -nostdlib CMakeFiles/app_hal.elf.dir/benchmark.c.obj -o app_hal.elf  -T /home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/sw/bsp/linker.x -nostdlib -Wl,--start-group bsp/libhal2_bsp.a -lc -lstdc++ -lgcc -lm -Wl,--end-group 

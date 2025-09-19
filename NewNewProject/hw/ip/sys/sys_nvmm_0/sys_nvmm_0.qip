@@ -1,0 +1,32 @@
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_TOOL_VERSION "24.1"
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_TOP_LEVEL_COMPONENT_NAME "nvmm"
+set_global_assignment -library "sys_nvmm_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "sys_nvmm_0.sopcinfo"]
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name SLD_INFO "QSYS_NAME sys_nvmm_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "sys_nvmm_0" -name MISC_FILE [file join $::quartus(qip_path) "sys_nvmm_0.cmp"]
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_TARGETED_DEVICE_FAMILY "Arria 10"
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_GENERATED_DEVICE_FAMILY "{Arria 10}"
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "sys_nvmm_0" -name MISC_FILE [file join $::quartus(qip_path) "../sys_nvmm_0.ip"]
+
+set_global_assignment -entity "nvmm" -library "nvmm_10" -name IP_COMPONENT_NAME "bnZtbQ=="
+set_global_assignment -entity "nvmm" -library "nvmm_10" -name IP_COMPONENT_DISPLAY_NAME "bnZtbQ=="
+set_global_assignment -entity "nvmm" -library "nvmm_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "nvmm" -library "nvmm_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "nvmm" -library "nvmm_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_COMPONENT_NAME "c3lzX252bW1fMA=="
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "sys_nvmm_0" -library "sys_nvmm_0" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "nvmm_10" -name VHDL_FILE [file join $::quartus(qip_path) "nvmm_10/synth/nvmm4x4.vhd"]
+set_global_assignment -library "nvmm_10" -name VHDL_FILE [file join $::quartus(qip_path) "nvmm_10/synth/SysArray.vhd"]
+set_global_assignment -library "nvmm_10" -name VHDL_FILE [file join $::quartus(qip_path) "nvmm_10/synth/PE.vhd"]
+set_global_assignment -library "sys_nvmm_0" -name VHDL_FILE [file join $::quartus(qip_path) "synth/sys_nvmm_0.vhd"]
+

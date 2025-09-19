@@ -1,0 +1,29 @@
+bsp_hal/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj: \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/HAL/src/alt_dma_rxchan_open.c \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/HAL/inc/sys/alt_dma.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/HAL/inc/sys/alt_dma_dev.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/HAL/inc/priv/alt_dev_llist.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/HAL/inc/sys/alt_llist.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/HAL/inc/alt_types.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/errno.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/errno.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/reent.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/config.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/ieeefp.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_types.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_types.h \
+ /nfs/site/disks/swbld_releases_5/acds/24.1/106/linux64/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/lock.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/HAL/inc/sys/alt_errno.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/HAL/inc/priv/alt_file.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/HAL/inc/sys/alt_dev.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/./system.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/./linker.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/HAL/inc/os/alt_sem.h \
+ /tmp/arc_1657484022/_0/regtest/exampledesigns/design_store_designs/niosv_g/hello_world/a10_soc_kit/sw/bsp_hal/HAL/inc/priv/alt_no_error.h

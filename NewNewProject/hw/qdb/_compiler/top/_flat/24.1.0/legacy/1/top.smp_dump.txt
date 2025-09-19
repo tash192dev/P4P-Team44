@@ -1,0 +1,73 @@
+
+State Machine - Summary
+
+State Machine - u0|mm_interconnect_0|jtag_uart_avalon_jtag_slave_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - u0|mm_interconnect_0|sysid_qsys_0_control_slave_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - u0|mm_interconnect_0|cpu_dm_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - u0|mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - u0|mm_interconnect_0|cpu_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - u0|cpu|intel_niosv_g_inst|hart|core_inst|icache_inst|state
+Name state.S_WRITEBACK_TRANSFER state.S_WRITEBACK_REQ state.S_HIT state.S_PREFETCH state.S_FLUSH state.S_FETCH_REQ state.S_FETCH_TRANSFER state.S_INIT 
+state.S_INIT 0 0 0 0 0 0 0 0 
+state.S_FETCH_TRANSFER 0 0 0 0 0 0 1 1 
+state.S_FETCH_REQ 0 0 0 0 0 1 0 1 
+state.S_FLUSH 0 0 0 0 1 0 0 1 
+state.S_PREFETCH 0 0 0 1 0 0 0 1 
+state.S_HIT 0 0 1 0 0 0 0 1 
+state.S_WRITEBACK_REQ 0 1 0 0 0 0 0 1 
+state.S_WRITEBACK_TRANSFER 1 0 0 0 0 0 0 1 
+
+State Machine - u0|cpu|intel_niosv_g_inst|hart|core_inst|lsu_inst|state
+Name state.CMO_EVICT state.AMO_RD_1 state.EVICT_IDLE state.AMO_RD_0 state.EVICT state.UNCACHED state.AMO_OP state.AMO_WR state.CACHE_SCRUB state.CMO_WAIT state.CACHE_CHK state.MISS_FILL state.ST_IDLE 
+state.ST_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.MISS_FILL 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.CACHE_CHK 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.CMO_WAIT 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.CACHE_SCRUB 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.AMO_WR 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.AMO_OP 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.UNCACHED 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.EVICT 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.AMO_RD_0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.EVICT_IDLE 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.AMO_RD_1 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.CMO_EVICT 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - u0|cpu|intel_niosv_g_inst|dbg_mod|dm_inst|dm_state
+Name dm_state.CMD_EXE dm_state.RESUMING dm_state.EXE_PNDG dm_state.HALTED dm_state.HALTREQ dm_state.IDLE 
+dm_state.IDLE 0 0 0 0 0 0 
+dm_state.HALTREQ 0 0 0 0 1 1 
+dm_state.HALTED 0 0 0 1 0 1 
+dm_state.EXE_PNDG 0 0 1 0 0 1 
+dm_state.RESUMING 0 1 0 0 0 1 
+dm_state.CMD_EXE 1 0 0 0 0 1 

@@ -148,9 +148,9 @@ https://fpgasoftware.intel.com/eula.-->
  <parameter name="systemInfos"><![CDATA[<systemInfosDefinition>
     <connPtSystemInfos>
         <entry>
-            <key>clock_in_in_clk</key>
+            <key>clk</key>
             <value>
-                <connectionPointName>clock_in_in_clk</connectionPointName>
+                <connectionPointName>clk</connectionPointName>
                 <suppliedSystemInfos>
                     <entry>
                         <key>CLOCK_RATE</key>
@@ -166,11 +166,9 @@ https://fpgasoftware.intel.com/eula.-->
  <parameter name="timeStamp" value="0" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
- <interface
-   name="clock_in_in_clk"
-   internal="clock_in.in_clk"
-   type="clock"
-   dir="end" />
+ <interface name="clk" internal="clock_in.in_clk" type="clock" dir="end">
+  <port name="clk_clk" internal="in_clk" />
+ </interface>
  <interface name="reset" internal="reset_in.in_reset" type="reset" dir="end" />
  <module
    name="clock_in"
@@ -241,7 +239,7 @@ https://fpgasoftware.intel.com/eula.-->
                         </entry>
                         <entry>
                             <key>clockRate</key>
-                            <value>50000000</value>
+                            <value>50000</value>
                         </entry>
                         <entry>
                             <key>clockRateKnown</key>
@@ -297,7 +295,7 @@ https://fpgasoftware.intel.com/eula.-->
                     <suppliedSystemInfos>
                         <entry>
                             <key>CLOCK_RATE</key>
-                            <value>50000000</value>
+                            <value>50000</value>
                         </entry>
                     </suppliedSystemInfos>
                     <consumedSystemInfos/>
@@ -369,7 +367,7 @@ https://fpgasoftware.intel.com/eula.-->
                     </entry>
                     <entry>
                         <key>clockRate</key>
-                        <value>50000000</value>
+                        <value>50000</value>
                     </entry>
                     <entry>
                         <key>clockRateKnown</key>
@@ -424,7 +422,7 @@ https://fpgasoftware.intel.com/eula.-->
 </generationInfoDefinition>]]></parameter>
   <parameter name="hdlParameters"><![CDATA[<hdlParameterDescriptorDefinitionList/>]]></parameter>
   <parameter name="hlsFile" value="" />
-  <parameter name="liveModuleName">altera_clock_bridge_inst</parameter>
+  <parameter name="liveModuleName" value="clock_in" />
   <parameter name="logicalView">ip/sys/sys_clock_in.ip</parameter>
   <parameter name="moduleAssignmentDefinition"><![CDATA[<assignmentDefinition>
     <assignmentValueMap/>
@@ -1997,7 +1995,7 @@ https://fpgasoftware.intel.com/eula.-->
                         </entry>
                         <entry>
                             <key>CLOCK_RATE</key>
-                            <value>50000000</value>
+                            <value>50000</value>
                         </entry>
                         <entry>
                             <key>RESET_DOMAIN</key>
@@ -3604,7 +3602,7 @@ https://fpgasoftware.intel.com/eula.-->
     <assignmentValueMap>
         <entry>
             <key>embeddedsw.CMacro.CPU_FREQ</key>
-            <value>50000000u</value>
+            <value>50000u</value>
         </entry>
         <entry>
             <key>embeddedsw.CMacro.DATA_ADDR_WIDTH</key>
@@ -3740,7 +3738,7 @@ https://fpgasoftware.intel.com/eula.-->
         </entry>
         <entry>
             <key>embeddedsw.dts.params.clock-frequency</key>
-            <value>50000000u</value>
+            <value>50000u</value>
         </entry>
         <entry>
             <key>embeddedsw.dts.params.dcache-line-size</key>
@@ -4330,7 +4328,7 @@ https://fpgasoftware.intel.com/eula.-->
                     <consumedSystemInfos>
                         <entry>
                             <key>CLOCK_RATE</key>
-                            <value>50000000</value>
+                            <value>50000</value>
                         </entry>
                     </consumedSystemInfos>
                 </value>
@@ -5443,7 +5441,7 @@ https://fpgasoftware.intel.com/eula.-->
         <parameterHdlType>INTEGER</parameterHdlType>
         <parameterName>N</parameterName>
         <parameterType>java.lang.Integer</parameterType>
-        <parameterValue>25</parameterValue>
+        <parameterValue>4</parameterValue>
     </hdlParameterDescriptorDefinition>
     <hdlParameterDescriptorDefinition>
         <enabled>true</enabled>

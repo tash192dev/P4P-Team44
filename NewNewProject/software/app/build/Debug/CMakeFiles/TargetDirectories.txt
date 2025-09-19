@@ -1,0 +1,8 @@
+/home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/app/build/Debug/CMakeFiles/app.elf.dir
+/home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/app/build/Debug/CMakeFiles/create-objdump.dir
+/home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/app/build/Debug/CMakeFiles/niosv-stack-report.dir
+/home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/app/build/Debug/CMakeFiles/edit_cache.dir
+/home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/app/build/Debug/CMakeFiles/rebuild_cache.dir
+/home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/app/build/Debug/bsp/CMakeFiles/hal2_bsp.dir
+/home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/app/build/Debug/bsp/CMakeFiles/edit_cache.dir
+/home/ubuntuaspiretank/p4p/P4P-Team44/NewNewProject/software/app/build/Debug/bsp/CMakeFiles/rebuild_cache.dir

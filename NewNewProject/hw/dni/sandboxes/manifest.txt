@@ -1,0 +1,3 @@
+22 serialization::archive 19 0 0 3 0 0 0 42 ubuntuaspiretank-Aspire-A515-58GM_100105_0 0 0 6 folder 0 0 0 1 1 
+ 42 ubuntuaspiretank-Aspire-A515-58GM_105226_0 6 folder 0 1 1 
+ 42 ubuntuaspiretank-Aspire-A515-58GM_272486_0 6 folder 0 1 1 

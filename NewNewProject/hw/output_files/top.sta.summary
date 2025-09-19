@@ -1,0 +1,97 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'clk'
+Slack : 3.395
+TNS   : 0.000
+Corner: Slow 900mV 100C Model
+
+Type  : Setup 'altera_reserved_tck'
+Slack : 11.078
+TNS   : 0.000
+Corner: Slow 900mV 0C Model
+
+Type  : Hold 'altera_reserved_tck'
+Slack : 0.016
+TNS   : 0.000
+Corner: Fast 900mV 0C Model
+
+Type  : Hold 'clk'
+Slack : 0.016
+TNS   : 0.000
+Corner: Fast 900mV 0C Model
+
+Type  : Recovery 'clk'
+Slack : 15.197
+TNS   : 0.000
+Corner: Slow 900mV 100C Model
+
+Type  : Recovery 'altera_reserved_tck'
+Slack : 59.171
+TNS   : 0.000
+Corner: Slow 900mV 100C Model
+
+Type  : Removal 'clk'
+Slack : 0.219
+TNS   : 0.000
+Corner: Fast 900mV 0C Model
+
+Type  : Removal 'altera_reserved_tck'
+Slack : 0.398
+TNS   : 0.000
+Corner: Fast 900mV 0C Model
+
+Type  : Minimum Pulse Width 'clk'
+Slack : 9.430
+TNS   : 0.000
+Corner: Slow 900mV 0C Model
+
+Type  : Minimum Pulse Width 'altera_reserved_tck'
+Slack : 31.053
+TNS   : 0.000
+Corner: Slow 900mV 0C Model
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 15.325
+
+Type  : Slow 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 49.029
+
+Type  : Slow 900mV 0C Model Max Skew 'set_max_skew'
+Slack : 15.342
+
+Type  : Slow 900mV 0C Model Max Skew 'set_max_skew'
+Slack : 49.036
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 15.577
+
+Type  : Fast 900mV 100C Model Max Skew 'set_max_skew'
+Slack : 49.368
+
+Type  : Fast 900mV 0C Model Max Skew 'set_max_skew'
+Slack : 15.650
+
+Type  : Fast 900mV 0C Model Max Skew 'set_max_skew'
+Slack : 49.489
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.410
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.450
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.534
+
+Type  : Net Delay 'set_net_delay'
+Slack : 49.427
+
+Type  : Net Delay 'set_net_delay'
+Slack : 49.452
+
+Type  : Net Delay 'set_net_delay'
+Slack : 49.530
+
+------------------------------------------------------------

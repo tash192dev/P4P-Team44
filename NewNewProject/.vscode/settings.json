@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.sysj": "java",
+        "system.h": "c"
+    }
+}
