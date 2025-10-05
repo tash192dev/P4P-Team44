@@ -13,8 +13,8 @@ entity PE is
     I_in : in signed(7 downto 0);
     I_out : out signed (7 downto 0);
     
-    O_in : in signed(7 downto 0);
-    O_out : out signed (7 downto 0)
+    O_in : in signed(31 downto 0);
+    O_out : out signed(31 downto 0)
   ) ;
 end PE;
 
@@ -31,8 +31,7 @@ begin
           end if;
           
           I_out <= I_in;
-          temp := O_in + (I_in * Weight);
-          O_out <= resize(temp, 8);
+          O_out <= O_in + (I_in * Weight);
 
         end if;
     end process;

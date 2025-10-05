@@ -28,9 +28,11 @@ end entity nvmm;
 
 architecture rtl of nvmm is
 
+	type Vec32 is array(0 to N-1) of std_logic_vector(31 downto 0);
+
 	-- Systolic array interface signals
 	signal SysIn : std_logic_vector((N*8)-1 downto 0) := (others => '0');
-	signal SysOut : std_logic_vector((N*8)-1 downto 0) := (others => '0');
+	signal SysOut : std_logic_vector((N*32)-1 downto 0) := (others => '0');
 	signal SysBias : std_logic_vector((N*8)-1 downto 0) := (others => '0');
 	signal SysKernel : std_logic_vector((N*8)-1 downto 0) := (others => '0');
 	signal SysWeightMove : std_logic;
@@ -41,6 +43,8 @@ architecture rtl of nvmm is
 	signal Func3 : std_logic_vector(2 downto 0);
 	signal Enable : std_logic := '0';
 	signal CycleCount : integer range 0 to 255 := 0;
+
+	signal Sys_OV : Vec32;
 
 begin
 
@@ -64,6 +68,12 @@ begin
 	-- Renaming for readability
 	Func7 <= NVMM_ctrl(31 downto 25);
 	Func3 <= NVMM_ctrl(14 downto 12); 
+	
+
+	IO_MAP: for A in 0 to N-1 generate
+		Sys_OV(A) <=  SysOut(((A+1)*32)-1 downto A*32);
+  	end generate IO_MAP;
+
 
 
 	process(NVMM_clk, NVMM_reset)
@@ -77,13 +87,17 @@ begin
 					-- CONV IN
 					when "000" =>
 						SysIn <= NVMM_data0;
+						Enable <= '0';
+						NVMM_done <= '1';
+						CycleCount <= 0;
+						NVMM_result <= (others => '0');
 
-						if CycleCount >= 5 then
-							Enable <= '0';
-							NVMM_done <= '1';
-							CycleCount <= 0;
-							NVMM_result <= SysOut;
-						end if;
+					-- CONV OUT
+					when "001" =>
+						Enable <= '0';
+						NVMM_done <= '1';
+						CycleCount <= 0;
+						NVMM_result <= Sys_OV(to_integer(unsigned(Func3)));
 
 
 					-- Kernel SET

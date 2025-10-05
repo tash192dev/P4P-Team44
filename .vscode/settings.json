@@ -4,5 +4,6 @@
         "custom_instruction.h": "c",
         "system.h": "c",
         "unistd.h": "c"
-    }
+    },
+    "cmake.sourceDirectory": "/home/ubuntuaspiretank/Documents/P4P-Team44/NewNewProject/software/app"
 }
